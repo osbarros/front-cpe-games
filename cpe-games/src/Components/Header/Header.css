@@ -1,0 +1,11 @@
+.container{
+    background:black;
+    display: flex;
+    opacity: 0.95;
+    width: 1600px;
+    height: 82px;
+}
+
+.navegacao{
+    color: #F6FAE8;
+}

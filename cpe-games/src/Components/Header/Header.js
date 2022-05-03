@@ -1,11 +1,11 @@
-import React from "react";
-import "./Header.css";
+import React from "react"
+
 
 function Header() {
     return (
         <div className = "container">
             <img src="/images/logo_cpe.png" alt="CPE"/>
-            <ul>
+            <ul className = "navegacao">
                 <li>
                    JOGOS 
                 </li>
@@ -28,20 +28,12 @@ function Header() {
                 <div>
                     INSCREVA-SE
                 </div>
-                
             </div>
 
-
-
-
-
+            <div className="linha_branca"/>
 
         </div>
-
-
-
-
-    );
-
-
+    )
 }
+
+export default Header
