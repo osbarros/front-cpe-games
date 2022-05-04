@@ -1,39 +1,42 @@
 import React from "react"
+import "./Header.css"
 
 
 function Header() {
     return (
-        <div className = "container">
-            <img src="/images/logo_cpe.png" alt="CPE"/>
-            <ul className = "navegacao">
-                <li>
-                   JOGOS 
-                </li>
-                <li>
-                    CAMPEONATOS
-                </li>
-                <li>
-                    LOJA
-                </li>
-            </ul>
+        <>
+            <div className = "header_container">
+                <img src="/images/logo_cpe.png" alt="CPE"/>
+                <ul className = "header_navegacao">
+                    <li>
+                        JOGOS 
+                    </li>
+                    <li>
+                        CAMPEONATOS
+                    </li>
+                    <li>
+                        LOJA
+                    </li>
+                </ul>
 
-            <div>
-                Barra de pesquisa
-            </div>
-
-            <div className="login_e_cadastro">
                 <div>
-                    LOGIN
+                    Barra de pesquisa
                 </div>
-                <div>
-                    INSCREVA-SE
+
+                <div className="header_login_e_cadastro">
+                    <div>
+                        LOGIN
+                    </div>
+                    <div>
+                        INSCREVA-SE
+                    </div>
                 </div>
+
+                <div className="header_linha_branca"/>
+
             </div>
-
-            <div className="linha_branca"/>
-
-        </div>
-    )
+        </>
+    )  
 }
 
 export default Header
