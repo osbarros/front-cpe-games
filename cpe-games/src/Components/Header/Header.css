@@ -6,12 +6,21 @@
     height: 82px;
     opacity: 0.95;
     border-bottom: 2px solid #F6FAE8;
+    display: flex;
+    justify-content: space-around;
 }
 
-.header_container{
+.header_esquerda{
     display: flex;
     flex-direction: row;
-    opacity: 0.95;
+    width: 27.81%;
+    height: 60px;
+    color:#F6FAE8;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 28px;
+    justify-content: space-between;
+
 }
 
 .logo_cpe{
@@ -19,41 +28,63 @@
     height: 60px;
     margin-top: 10px;
     margin-bottom: 10px;
-    position: absolute;
-    left: 11.25%;
 
 
 }
 
 .header_jogos{
-    color:#F6FAE8;
-    position: absolute;
-    left: 17.06%;
-    font-size: 20px;
-    font-family: 'Inter', sans-serif;
-    display: flex;
-    margin-top: 28px;
     margin-bottom: 28px;
+    margin-top: 28px;
 }
 
 .header_campeonatos{
-    color:#F6FAE8;
-    position: absolute;
-    left: 23.63%;
-    font-size: 20px;
-    font-family: 'Inter', sans-serif;
-    display: flex;
-    margin-top: 28px;
     margin-bottom: 28px;
+    margin-top: 28px;
 }
 
 .header_loja{
+    margin-bottom: 28px;
+    margin-top: 28px;
+}
+
+.header_direita{
+    width: 36.13%;
+    height: 56px;
+    display: flex;
+    flex-direction: row;
     color:#F6FAE8;
-    position: absolute;
-    left: 35.68%;
+    justify-content: space-between;
     font-size: 20px;
     font-family: 'Inter', sans-serif;
-    display: flex;
-    margin-top: 28px;
-    margin-bottom: 28px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header_pesquisa{
+    width: 42.9%;
+    height: 40px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: left;
+}
+
+.header_login{
+    width: 10.73%;
+    height: 24px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header_increver{
+    width: 35.29%;
+    height: 56px;
+    border-radius: 12px;
+    background: #FFD100;
+    border: 2px solid #000000;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    color:#F6FAE8;
 }

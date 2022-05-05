@@ -5,7 +5,7 @@ import "./Header.css"
 function Header() {
     return (
         <div className="header_global">
-            <div className = "header_container">
+            <div className = "header_esquerda">
                 <img src="/images/logo_cpe.png" className="logo_cpe" alt="CPE"/>
                 <div className = "header_jogos">
                     JOGOS 
@@ -16,21 +16,20 @@ function Header() {
                 <div className="header_loja">
                     LOJA
                 </div>
-                <div>
-                    Barra de pesquisa
-                </div>
+            </div>
 
-                <div className="header_login_e_cadastro">
-                    <div>
+                <div className="header_direita">
+                    <div className="header_pesquisa">
+                        Pesquisa...
+                    </div>
+                    <div className="header_login">
                         LOGIN
                     </div>
-                    <div>
+                    <button className="header_increver">
                         INSCREVA-SE
-                    </div>
+                    </button>
                 </div>
-
             </div>
-        </div>
     )  
 }
 
