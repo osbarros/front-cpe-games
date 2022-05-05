@@ -42,6 +42,24 @@
     color: #F6FAE8;
 }
 
+.container_jogo {
+    position: relative;
+    display:flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: #F6FAE8;
+}
+
+.texto_jogo {
+    position: absolute;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    text-align: center;
+    max-width: 140px;
+}
+
 .grid_jogos {
     margin-top: 83px;
     margin-bottom: 77px;
