@@ -21,7 +21,7 @@
     padding-bottom: 57px;
 }
 
-.bold_text {
+.texto_negrito {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -42,6 +42,24 @@
     color: #F6FAE8;
 }
 
+.grid_jogos {
+    margin-top: 83px;
+    margin-bottom: 77px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 262px;
+    row-gap: 109px;
+    justify-content: center;
+}
+
+.jogo_grid {
+    height: 306px;
+    width: 236px;
+    object-fit: cover;
+    border: 0px;
+    float: left;
+}
+
 .terceiro_texto {
     font-family: 'Inter';
     font-style: normal;
@@ -52,8 +70,4 @@
     align-items: center;
     text-align: center;
     color: #F6FAE8;
-}
-
-.item_lista {
-    padding: 50px;
 }
