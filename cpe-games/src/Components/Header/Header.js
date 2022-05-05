@@ -4,21 +4,18 @@ import "./Header.css"
 
 function Header() {
     return (
-        <>
+        <div className="header_global">
             <div className = "header_container">
-                <img src="/images/logo_cpe.png" alt="CPE"/>
-                <ul className = "header_navegacao">
-                    <li>
-                        JOGOS 
-                    </li>
-                    <li>
-                        CAMPEONATOS
-                    </li>
-                    <li>
-                        LOJA
-                    </li>
-                </ul>
-
+                <img src="/images/logo_cpe.png" className="logo_cpe" alt="CPE"/>
+                <div className = "header_jogos">
+                    JOGOS 
+                </div>
+                <div className="header_campeonatos">
+                    CAMPEONATOS
+                </div>
+                <div className="header_loja">
+                    LOJA
+                </div>
                 <div>
                     Barra de pesquisa
                 </div>
@@ -32,10 +29,8 @@ function Header() {
                     </div>
                 </div>
 
-                <div className="header_linha_branca"/>
-
             </div>
-        </>
+        </div>
     )  
 }
 
