@@ -13,10 +13,10 @@ function Footer() {
                 <p className="footer-text">Faq</p>
             </div>
             <div className="footer-social-container">
-                <a href=""><img className="footer-img-social" src="/images/linkedin.png" alt="LinkedIn"></img></a>
-                <a href=""><img className="footer-img-social" src="/images/twitter.png" alt="Twitter"></img></a>
-                <a href=""><img className="footer-img-social" src="/images/instagram.png" alt="Instagram"></img></a>
-                <a href=""><img className="footer-img-social" src="/images/facebook.png" alt="Facebook"></img></a>
+                <img className="footer-img-social" src="/images/linkedin.png" alt="LinkedIn"></img>
+                <img className="footer-img-social" src="/images/twitter.png" alt="Twitter"></img>
+                <img className="footer-img-social" src="/images/instagram.png" alt="Instagram"></img>
+                <img className="footer-img-social" src="/images/facebook.png" alt="Facebook"></img>
             </div>
         </div>
     </div>
