@@ -20,7 +20,9 @@ function Header() {
 
                 <div className="header_direita">
                     <form className="header_search" action="">
-                        Faça sua pesquisa...
+                        <div className="header_search_text"> 
+                            Pesquisar...
+                        </div>
                     </form>
                     <button className="header_login">
                         LOGIN
@@ -34,3 +36,4 @@ function Header() {
 }
 
 export default Header
+
