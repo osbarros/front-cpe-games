@@ -7,24 +7,24 @@ function Header() {
         <div className="header_global">
             <div className = "header_esquerda">
                 <img src="/images/logo_cpe.png" className="logo_cpe" alt="CPE"/>
-                <div className = "header_jogos">
+                <button className = "header_jogos">
                     JOGOS 
-                </div>
-                <div className="header_campeonatos">
+                </button>
+                <button className="header_campeonatos">
                     CAMPEONATOS
-                </div>
-                <div className="header_loja">
+                </button>
+                <button className="header_loja">
                     LOJA
-                </div>
+                </button>
             </div>
 
                 <div className="header_direita">
-                    <div className="header_pesquisa">
-                        Pesquisa...
-                    </div>
-                    <div className="header_login">
+                    <form className="header_search" action="">
+                        Faça sua pesquisa...
+                    </form>
+                    <button className="header_login">
                         LOGIN
-                    </div>
+                    </button>
                     <button className="header_increver">
                         INSCREVA-SE
                     </button>

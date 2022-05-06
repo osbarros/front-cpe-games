@@ -32,19 +32,29 @@
 
 }
 
+
 .header_jogos{
     margin-bottom: 28px;
     margin-top: 28px;
+    border: none;
+    color:#F6FAE8;
+    background-color: #000000;
 }
 
 .header_campeonatos{
     margin-bottom: 28px;
     margin-top: 28px;
+    border: none;
+    color:#F6FAE8;
+    background-color: #000000;
 }
 
 .header_loja{
     margin-bottom: 28px;
     margin-top: 28px;
+    border: none;
+    color:#F6FAE8;
+    background-color: #000000;
 }
 
 .header_direita{
@@ -61,7 +71,7 @@
     transform: translateY(-50%);
 }
 
-.header_pesquisa{
+.header_search{
     width: 42.9%;
     height: 40px;
     position: relative;
@@ -76,6 +86,9 @@
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+    border: none;
+    background-color: #000000;
+    color:#F6FAE8;
 }
 
 .header_increver{
@@ -86,5 +99,5 @@
     border: 2px solid #000000;
     font-size: 20px;
     font-family: 'Inter', sans-serif;
-    color:#F6FAE8;
+    color:#000000;
 }
