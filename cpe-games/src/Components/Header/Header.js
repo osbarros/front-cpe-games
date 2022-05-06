@@ -6,7 +6,7 @@ function Header() {
     return (
         <div className="header_global">
             <div className = "header_esquerda">
-                <img src="/images/logo_cpe.png" className="logo_cpe" alt="CPE"/>
+                <img src="/images/logo_cpe_preto.png" className="logo_cpe" alt="CPE"/>
                 <button className = "header_jogos">
                     JOGOS 
                 </button>
@@ -19,11 +19,10 @@ function Header() {
             </div>
 
                 <div className="header_direita">
-                    <form className="header_search" action="">
-                        <div className="header_search_text"> 
-                            Pesquisar...
-                        </div>
-                    </form>
+                    <div className="header_search" action="">
+                        <img src="/images/searchbar.svg" className="header_logo_searchbar" alt="searchbar"/>
+                        <input className="header_search_text" placeholder="Pesquisar..."></input>
+                    </div>
                     <button className="header_login">
                         LOGIN
                     </button>

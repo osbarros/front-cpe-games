@@ -88,15 +88,27 @@ padding: 0;
     text-align: left;
     background-color: #191919;
     border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .header_search_text{
+    width: 100%;
+    background-color: #191919;
+    border: none;
     text-align: left;
-    margin-left: 18.95%;
+    margin-left: 4.59%;
     color: #BABABA;
     font-weight: 800;
-    font-size: 24px;
+    font-size: 20px;
     font-family: 'Inter', sans-serif;
+
+}
+.header_logo_searchbar{
+    width: 11.77%;
+    height: 77.5%;
+    margin-left: 2.42%;
 
 }
 
@@ -115,9 +127,9 @@ padding: 0;
     width: 35.29%;
     height: 56px;
     border-radius: 12px;
-    background: #FFD100;
-    border: 2px solid #000000;
+    background-color: #000000;
+    border: 2px solid #FFD100;
     font-size: 20px;
     font-family: 'Inter', sans-serif;
-    color:#000000;
+    color:#FFD100;
 }
