@@ -1,17 +1,19 @@
 :root {
-  --logo-size: 80px;
+  --logo-size: 4em;
+  --font-size: 1.25em;
   --social-media-size: 30px;
   --footer-outline: 2px solid white;
   --footer-container-hmargin: calc(100%/12);
   --footer-text-gap: 1rem;
   --footer-height: calc(100%/5.25);
   --footer-vpadding: 1.5rem;
+  --responsive-footer-row-gap: .5em;
 }
 
 .footer {
   background-color: black;
   outline: var(--footer-outline);
-  height: var(--footer-height);
+  height: auto;
 }
 
 .footer-container {
@@ -34,7 +36,7 @@
 .footer-text {
   text-transform: uppercase;
   color: white;
-  font-size: 15pt;
+  font-size: var(--font-size);
   font-family: Inter;
   font-weight: 600;
   margin: 0px var(--footer-text-gap) 0px 0px;
@@ -53,4 +55,20 @@
 .footer-img-social {
   width: var(--social-media-size);
   height: var(--social-media-size);
+}
+
+@media only screen and (max-width: 910px) {
+  .footer-text-container {
+    flex-direction: column;
+    margin-left: auto;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+  
+  .footer-container * {
+    margin-top: var(--responsive-footer-row-gap);
+    margin-bottom: var(--responsive-footer-row-gap);
+  }
 }
