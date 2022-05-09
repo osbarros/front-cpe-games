@@ -65,10 +65,11 @@
 
   .footer-container {
     flex-direction: column;
+    align-items: center;
+    padding: 0;
   }
-  
+
   .footer-container * {
-    margin-top: var(--responsive-footer-row-gap);
-    margin-bottom: var(--responsive-footer-row-gap);
+    margin: var(--responsive-footer-row-gap) 0 var(--responsive-footer-row-gap) 0;
   }
 }
