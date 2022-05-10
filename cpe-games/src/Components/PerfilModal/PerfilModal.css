@@ -1,0 +1,68 @@
+:root {
+    --modal-section-hsize: 50%;
+    --modal-section-gap: .75em;
+    --modal-hsize: 30%;
+    --modal-vsize: 70vh;
+}
+
+.modal-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-dialog {
+    background: #FFD100;
+    width: var(--modal-hsize);
+    height: var(--modal-vsize);
+    padding: .75em;
+    border-radius: 1em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modal-title {
+    font-family: Inter;
+    font-weight: 800;
+}
+
+.modal-description {
+    min-height: 150px;
+}
+
+.modal-section {
+    display: flex;
+    flex-direction: column;
+    width: var(--modal-section-hsize);
+}
+
+.modal-section *:not(:first-child) {
+    margin-top: var(--modal-section-gap);
+}
+
+.button-submit {
+    border-radius: 2em !important;
+    background: #931717 !important;
+    font-weight: 600 !important;
+    box-shadow: none !important;
+}
+
+input, textarea, select {
+    border: none;
+    padding: .25em;
+    border-radius: .25em;
+}
+
+/* Utilitários */
+
+* {
+    font-family: Inter;
+}
+
+.upper {
+    text-transform: uppercase;
+    font-weight: 600;
+}

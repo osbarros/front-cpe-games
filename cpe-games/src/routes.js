@@ -5,7 +5,8 @@ import HomeDeslogado from "./Pages/HomeDeslogado";
 import HomeLogado from "./Pages/HomeLogado";
 import Login from "./Pages/Login";
 import Perfil from "./Pages/Perfil";
-import Footer from "../src/Components/Footer";
+//import Footer from "../src/Components/Footer";
+import UserModal from "./Components/PerfilModal/PerfilModal";
 
 function Rotas() {
     return(
@@ -25,11 +26,12 @@ function Rotas() {
 function TempRota() {
     return(<>
 
-    <Footer>
+    <UserModal>
         <Routes>
             <Route path="/temp"/>
         </Routes>
-    </Footer>
+    </UserModal>
+
     </>);
 }
 
