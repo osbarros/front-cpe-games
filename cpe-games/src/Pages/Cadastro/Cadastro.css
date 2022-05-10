@@ -1,0 +1,68 @@
+@import url('https://rsms.me/inter/inter.css%27');
+
+div { 
+  font-family: 'Inter', sans-serif;
+}
+
+.html {
+  background: #000000F2;
+}
+
+.body-input {
+  display: block;
+  margin: auto;
+  width: 55em;
+  height: fit-content;
+
+  background-color: #FFD100;
+  border-radius: 20px;
+}
+
+h1 {
+  text-align: center;
+
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.grid {
+  display: grid;
+  position: relative;
+  grid-template-columns: 50% 50%;
+  height: 13em;
+}
+
+.grid .column-1 {
+  display: grid;
+  grid-template-rows: 3em 3em 3em;
+  position: relative;
+
+  align-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.grid .column-2 {
+  display: grid;
+  grid-template-rows: 3em 3em 3em;
+  position: relative;
+
+  align-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.grid .column-2 .checkbox-games {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-rows: 1em 1em;
+  align-items: center;
+}
+
+#enter {
+  display: block;
+  margin: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
