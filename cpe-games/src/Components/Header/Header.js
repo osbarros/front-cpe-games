@@ -17,7 +17,6 @@ function Header() {
                     LOJA
                 </button>
             </div>
-
                 <div className="header_direita">
                     <div className="header_search" action="">
                         <img src="/images/searchbar.svg" className="header_logo_searchbar" alt="searchbar"/>
@@ -35,4 +34,8 @@ function Header() {
 }
 
 export default Header
+
+
+
+
 
