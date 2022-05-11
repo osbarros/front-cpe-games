@@ -1,8 +1,14 @@
 import React from "react"
-import Rotas from "./routes";
+import Header from "./Components/Header";
+import "./Global.css"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
-  return <Rotas/>;
+  return (
+    <div>
+      <Header/>
+    </div>
+  );
 }
 
 export default App;
