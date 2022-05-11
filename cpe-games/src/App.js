@@ -4,11 +4,7 @@ import "./Global.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
-  return (
-    <div>
-      <Header/>
-    </div>
-  );
+  return <Rotas/>;
 }
 
 export default App;
