@@ -1,7 +1,7 @@
 import React from "react"
-import Header from "./Components/Header";
+import Rotas from "./routes";
 import "./Global.css"
-import 'bootstrap/dist/css/bootstrap.min.css';
+//import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return <Rotas/>;
