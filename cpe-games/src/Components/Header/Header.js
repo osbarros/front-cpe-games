@@ -26,9 +26,9 @@ function Header() {
                 <button className="header_campeonatos">
                     CAMPEONATOS
                 </button>
-                <button className="header_loja">
+                <butbutton className="header_loja">
                     LOJA
-                </button>
+                </butbutton>
             </div>
             <img src="/images/logo_cpe_preto.png" className="logo_cpe_mobile" alt="CPE"/>
                 <div className="header_direita">
@@ -36,9 +36,9 @@ function Header() {
                         <img src="/images/searchbar.svg" className="header_logo_searchbar" alt="searchbar"/>
                         <input className="header_search_text" placeholder="Pesquisar..."></input>
                     </div>
-                    <button className="header_login">
+                    <div className="header_login">
                         LOGIN
-                    </button>
+                    </div>
                     <button className="header_increver">
                         INSCREVA-SE
                     </button>

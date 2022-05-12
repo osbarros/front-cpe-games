@@ -1,4 +1,4 @@
-import React from "react";
+/* import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Cadastro from "./Pages/Cadastro";
 import HomeDeslogado from "./Pages/HomeDeslogado";
@@ -20,4 +20,4 @@ function Rotas() {
     );
 }
 
-export default Rotas;
+export default Rotas; */

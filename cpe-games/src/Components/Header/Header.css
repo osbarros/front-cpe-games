@@ -37,11 +37,9 @@ padding: 0;
     width: 35%;
     color:#F6FAE8;
     font-family: 'Inter', sans-serif;
-    display: flex;
-    justify-content: space-between;
-    font-size: 20px;
-    position: relative;
     font-size: 1.05vw;
+    justify-content: space-between;
+    position: relative;
 
     
 
@@ -63,6 +61,8 @@ padding: 0;
     border: none;
     color:#F6FAE8;
     background-color: #000000;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.05vw;
 }
 
 .header_campeonatos{
@@ -71,6 +71,8 @@ padding: 0;
     border: none;
     color:#F6FAE8;
     background-color: #000000;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.05vw;
 }
 
 .header_loja{
@@ -79,6 +81,8 @@ padding: 0;
     border: none;
     color:#F6FAE8;
     background-color: #000000;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.05vw;
 }
 
 .logo_cpe_mobile{
@@ -156,6 +160,7 @@ padding: 0;
     border: 2px solid #FFD100;
     font-family: 'Inter', sans-serif;
     color:#FFD100;
+    font-size: 1.05vw;
 }
 
 .header_alt_menu{
@@ -213,24 +218,34 @@ padding: 0;
     .header_alt_jogos{
         color:#F6FAE8;
         background-color: #000000;
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
     }
 
     .header_alt_campeonatos{
         color:#F6FAE8;
         background-color: #000000;  
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
     }
 
     .header_alt_loja{
         color:#F6FAE8;
         background-color: #000000;  
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
     }
     .header_alt_login{
         color:#F6FAE8;
-        background-color: #000000;  
+        background-color: #000000; 
+        font-family: 'Inter', sans-serif;
+        font-size: 20px; 
     }
     .header_alt_inscrever{
         color:#F6FAE8;
         background-color: #000000;  
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
     }
 
 
