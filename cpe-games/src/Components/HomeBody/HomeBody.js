@@ -1,11 +1,9 @@
 import React from "react";
-import "./HomeLogado.css";
-import Header from "./../../Components/Header";
+import "./HomeBody.css";
 
-function HomeLogado() {
+function HomeBody() {
     return (
         <div>
-            <Header/>
             <div className="container">
                 <h1 className="primeiro_texto">
                     A CPE Games é uma plataforma de Esports para você se <span className="texto_negrito">divertir</span> e <span className="texto_negrito">competir</span> com seus amigos
@@ -46,4 +44,4 @@ function HomeLogado() {
     );
 }
 
-export default HomeLogado;
+export default HomeBody;

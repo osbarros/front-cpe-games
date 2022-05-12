@@ -12,8 +12,8 @@ function Header() {
         }; 
     
     return (
-        <div onClick={mobile_menu} className="header_global">
-            <div className = "mobile_menu">
+        <div className="header_global">
+            <div onClick={mobile_menu} className = "mobile_menu">
                 <div className="line1"></div>
                 <div className="line2"></div>
                 <div className="line3"></div>
@@ -26,9 +26,9 @@ function Header() {
                 <button className="header_campeonatos">
                     CAMPEONATOS
                 </button>
-                <butbutton className="header_loja">
+                <button className="header_loja">
                     LOJA
-                </butbutton>
+                </button>
             </div>
             <img src="/images/logo_cpe_preto.png" className="logo_cpe_mobile" alt="CPE"/>
                 <div className="header_direita">
@@ -36,9 +36,9 @@ function Header() {
                         <img src="/images/searchbar.svg" className="header_logo_searchbar" alt="searchbar"/>
                         <input className="header_search_text" placeholder="Pesquisar..."></input>
                     </div>
-                    <div className="header_login">
+                    <button className="header_login">
                         LOGIN
-                    </div>
+                    </button>
                     <button className="header_increver">
                         INSCREVA-SE
                     </button>
