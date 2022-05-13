@@ -1,41 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import { Modal, Button } from "@mui/material";
+import { Button } from "@mui/material";
 import "./PerfilModal.css";
-
-// TODO: remover essa função e mudar o export. Esse arquivo é para o Modal.
-function PerfilPageTemp() {
-
-    // START: Essa parte deve ser implementada em Perfil [logado]
-    const [viewModal, setViewModal] = useState(false);
-    
-    const _userData = {
-        name: "Hugo",
-        selectedGame: "League of Legends",
-        description: "Lorem ipsum",
-    }
-
-    const [userData, setUserData] = useState({..._userData})
-
-    function handleSave(user) {
-        setUserData(user);
-    }
-
-    // END
-
-    return(<>
-        <h1>Nome de usuário: {userData.name}</h1>
-        <h1>Jogo selecionado: {userData.selectedGame}</h1>
-        <h1>Descrição: {userData.description}</h1>
-
-        <Button variant="contained" onClick={() => setViewModal(true)}>Abrir modal</Button>
-
-        {/* Esse componente aninhado deve ser implementado em Perfil [logado] */}
-        <Modal className="modal-container" open={viewModal} onClose={() => setViewModal(false)}>
-            <PerfilModal user={userData} onClose={()=>setViewModal(false)} onSave={(user) => {handleSave(user)}}/>
-        </Modal>
-    </>);
-}
 
 function PerfilModal({user, onSave, onClose}) {
     
@@ -82,4 +48,4 @@ function PerfilModal({user, onSave, onClose}) {
 
 
 
-export default PerfilPageTemp;
+export default PerfilModal;

@@ -11,7 +11,7 @@ function Rotas() {
         <BrowserRouter>
             <Switch>
                 <Route path="/cadastro" component={Cadastro}/>
-                <Route path="/homeDeslogado" component={HomeDeslogado}/>
+                <Route path="/homeDeslogado" component={HomeDeslogado}/> {/* Isso é necessário?*/}
                 <Route path="/login" component={Login}/>
                 <Route path="/perfil" component={Perfil}/>
                 <Route path="*" component={Home}/>
