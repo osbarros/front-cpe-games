@@ -27,7 +27,7 @@ function PerfilBody() {
                 </div>
                 <div className="perfil_cpegames"><span className="texto_amarelo">CPE </span>GAMES</div>
             </div>
-            <div className="frase_cpe"><span className="texto_amarelo2">A MELHOR PLATAFORMA<br/></span> DE <em>E-SPORTS</em><br/> DO <span className="texto_negrito">BRASIL</span></div>
+            <div className="frase_cpe"><span className="texto_amarelo2">A MELHOR PLATAFORMA<br/></span> DE <em>E-SPORTS</em><br/> DO <span className="texto_negrito2">BRASIL</span></div>
         </div>
     </div>
   );
