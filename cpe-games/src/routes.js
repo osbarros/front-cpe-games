@@ -5,6 +5,7 @@ import HomeDeslogado from "./Pages/HomeDeslogado";
 import Home from "./Pages/Home";
 import Login from "./Pages/Login";
 import Perfil from "./Pages/Perfil";
+import Footer from "../src/Components/Footer";
 
 function Rotas() {
     return(
@@ -15,9 +16,21 @@ function Rotas() {
                 <Route path="/home" element={<Home/>}/>
                 <Route path="/login" element={<Login/>}/>
                 <Route path="/perfil" element={<Perfil/>}/>
+                <Route path="/temp" element={<TempRota/>}/>
             </Routes>
         </BrowserRouter>
     );
+}
+
+function TempRota() {
+    return(<>
+
+    <Footer>
+        <Routes>
+            <Route path="/temp"/>
+        </Routes>
+    </Footer>
+    </>);
 }
 
 export default Rotas;
