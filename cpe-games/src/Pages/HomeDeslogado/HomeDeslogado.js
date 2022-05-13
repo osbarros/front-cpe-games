@@ -1,7 +1,8 @@
 import React from "react";
+import Header from "./../../Components/Header";
 
 function HomeDeslogado() {
-    return <h1>HomeDeslogado</h1>;
+    return <Header/>;
 }
 
 export default HomeDeslogado;
