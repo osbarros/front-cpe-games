@@ -2,6 +2,13 @@ import React from "react";
 import "./PerfilBody.css"
 
 function PerfilBody() {
+
+    const _userData = {
+        name: "nome",
+        description: "description",
+        selectedGame: "selectedGame"
+    }
+
   return (
     <div>
         <div className="container">
@@ -19,10 +26,10 @@ function PerfilBody() {
                 <img className="imagem_perfil" alt="lol" src="https://pbs.twimg.com/media/E6v5XX5WQAMwlmQ?format=jpg&name=4096x4096"/>
                 <div className="fundo_preto">
                     <div className="container_info">
-                        <div className="nome_perfil">NOME DE PERFIL</div>
+                        <div className="nome_perfil">{_userData.name}</div>
                         <div className="pais_perfil">BRASIL</div>
-                        <div className="jogo_perfil">LEAGUE OF LEGENDS</div>
-                        <div className="descricao_perfil">Exemplo de descrição de perfil</div>
+                        <div className="jogo_perfil">{_userData.selectedGame}</div>
+                        <div className="descricao_perfil">{_userData.description}</div>
                     </div>
                 </div>
                 <div className="perfil_cpegames"><span className="texto_amarelo">CPE </span>GAMES</div>
