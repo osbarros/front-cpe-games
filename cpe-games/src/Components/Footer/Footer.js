@@ -6,7 +6,7 @@ function Footer() {
 
     <div className="footer">
         <div className="footer-container">
-            <img className="footer-img-logo" src="/images/logo_cpe.png" alt="Logo da CPE"></img>
+            <img src="/images/logo_cpe_preto.png" className="footer-img-logo" alt="CPE"></img>
             <div className="footer-text-container">
                 <p className="footer-text">Trabalhe Conosco</p>
                 <p className="footer-text">Fale com a gente</p>
