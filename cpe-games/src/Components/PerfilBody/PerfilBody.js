@@ -29,17 +29,36 @@ function PerfilBody() {
     <div>
         <div className="container">
             <div className="container_user">
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" className="user" viewBox="0 0 16 16">
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="user" viewBox="0 0 16 16">
                     <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
                 </svg>
-                <div className="titulo_perfil">PERFIL</div>
-                <button className="editar_perfil" onClick={() => setViewModal(true)}>
-                    EDITAR PERFIL
-                </button>
+                <div>
+                    <div className="titulo_perfil">PERFIL</div>
+                    <button className="editar_perfil" onClick={() => setViewModal(true)}>
+                        EDITAR PERFIL
+                    </button>
+                </div>
+            </div>
+
+        
+            <div className="container_user2">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="user2" viewBox="0 0 16 16">
+                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                    </svg>
+                    <div>
+                        <button className="editar_perfil2" onClick={() => setViewModal(true)}>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="edit_pen" viewBox="0 0 16 16">
+                                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                            </svg>
+                        </button>
+                    </div>
             </div>
 
             <div className="container_perfil">
-                <img className="imagem_perfil" alt="lol" src="https://pbs.twimg.com/media/E6v5XX5WQAMwlmQ?format=jpg&name=4096x4096"/>
+                <img className="imagem_perfil" alt="lol" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/wrarcana/wallpaper1_large.jpg"/>
                 <div className="fundo_preto">
                     <div className="container_info">
                         <div className="nome_perfil">{userData.name}</div>
