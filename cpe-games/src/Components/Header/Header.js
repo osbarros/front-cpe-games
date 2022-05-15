@@ -1,8 +1,11 @@
 import React, {useState} from "react"
 import "./Header.css"
+import { Link, useHistory } from "react-router-dom"
 
 
-function Header() {
+function Header(props) {
+
+    const history = useHistory();
 
     const [active, setActive] = useState("header_alt_menu");
         const mobile_menu = () => {
@@ -36,12 +39,14 @@ function Header() {
                         <img src="/images/searchbar.svg" className="header_logo_searchbar" alt="searchbar"/>
                         <input className="header_search_text" placeholder="Pesquisar..."></input>
                     </div>
-                    <button className="header_login">
-                        LOGIN
-                    </button>
-                    <button className="header_increver">
-                        INSCREVA-SE
-                    </button>
+                    <button className="header_login"
+                        onClick={() => {
+                            history.push('/login');
+                        }}   > LOGIN</button>
+                    <button className="header_increver"
+                        onClick={() => {
+                            history.push('/cadastro');
+                        }} > INSCREVA-SE</button>
                 </div>
                 <div className={active}>
                     <button className="header_alt_jogos">JOGOS</button>
