@@ -1,5 +1,60 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 
+.glide {
+  background: rgba(13, 13, 13, 1);
+  padding-bottom: 3em;
+  padding-top: 3em;
+}
+
+/* Valores acima de 1440px */
+@media (max-width: 1440px) {
+  .carrosel-item-header {
+    font-size: 1.4em;
+  }
+
+  .logo-item-carrosel {
+    height: 90%;
+  }
+
+  .amarelo {
+    font-size: 5em;
+  }
+}
+
+/* Valores entre 1024px e 1440px */
+@media (max-width: 1024px) {
+  .carrosel-item-header {
+    font-size: 1em;
+  }
+
+  .carrosel-item-text {
+    font-size: 0.7em;
+  }
+
+  .logo-item-carrosel {
+    width: 30px;
+  }
+
+  .amarelo {
+    font-size: 3em;
+  }
+}
+
+/* Valores até 375px */
+@media (max-width: 375px) {
+  .carrosel-item-header {
+    font-size: 0.7em;
+  }
+
+  .carrosel-item-text {
+    font-size: 0.4em;
+  }
+
+  .amarelo {
+    font-size: 2em;
+  }
+}
+
 /*Estilização do conteiner geral do slide*/
 .carrosel-item-box {
   display: flex;
@@ -24,20 +79,30 @@
   display: flex;
   justify-content: center;
 
-  margin-top: 3%;
-  margin-bottom: 2%;
+  margin: 0;
+  border: 0;
+  padding: 0.2em;
+  width: 100%;
+
+  border-top: 2px;
+  border-style: solid;
+  border-color: #FFD100;
+
+  background-color: rgba(198, 201, 202, 0.4);
 }
 
 /*Estilização dos textos do slide*/
 .carrosel-item-title {
   margin-top: 5%;
 
-  font-size: 100%;
+  font-weight: 800;
   color: white;
 }
 
 .carrosel-item-text {
-  font-size: 0.8em;
+  margin-bottom: 1em;
+
+  font-weight: 300;
   color: white;
 }
 
@@ -48,10 +113,9 @@
 }
 
 .logo-item-carrosel {
-  width: 12%;
+  height: 110%
 }
 
 .amarelo {
   color: yellow;
-  width: 2em;
 }
