@@ -82,7 +82,7 @@
 
     flex-direction: column;
     position: absolute;
-    height: 85%;
+    height: 65%;
     width: 50%;
     border-radius: 20px;
 
@@ -217,6 +217,20 @@
         background-color: #ffd000;
     }
 
+    .fundo_preto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        flex-direction: column;
+        position: absolute;
+        height: 40%;
+        width: 50%;
+        border-radius: 20px;
+
+        background: rgba(0, 0, 0, 0.5);
+    }
+
     .nome_perfil{
         font-family: 'Inter';
         font-style: normal;
@@ -347,20 +361,34 @@
         background-color: #ffd000;
     }
 
+    .fundo_preto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        flex-direction: column;
+        position: absolute;
+        height: 18%;
+        width: 50%;
+        border-radius: 20px;
+
+        background: rgba(0, 0, 0, 0.5);
+    }
+
     .nome_perfil{
         font-family: 'Inter';
         font-style: normal;
         font-weight: 700;
-        font-size: 26px;
+        font-size: 17px;
         color: #ffd100;
-        padding-bottom: 50px;
+        padding-bottom: 20px;
     }
     
     .pais_perfil{
         font-family: 'Inter';
         font-style: normal;
         font-weight: 700;
-        font-size: 20px;
+        font-size: 13px;
         color: #ffffff;
     }
     
@@ -368,16 +396,16 @@
         font-family: 'Inter';
         font-style: normal;
         font-weight: 700;
-        font-size: 18px;
+        font-size: 12px;
         color: #ffffff;
-        padding-bottom: 26px;
+        padding-bottom: 16px;
     }
     
     .descricao_perfil{
         font-family: 'Inter';
         font-style: normal;
         font-weight: 700;
-        font-size: 16px;
+        font-size: 8px;
         color: #ffffff;
     }
 
@@ -453,20 +481,34 @@
         background-color: #ffd000;
     }
 
+    .fundo_preto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        flex-direction: column;
+        position: absolute;
+        height: 15%;
+        width: 50%;
+        border-radius: 20px;
+
+        background: rgba(0, 0, 0, 0.5);
+    }
+
     .nome_perfil{
         font-family: 'Inter';
         font-style: normal;
         font-weight: 700;
-        font-size: 20px;
+        font-size: 13px;
         color: #ffd100;
-        padding-bottom: 30px;
+        padding-bottom: 8px;
     }
     
     .pais_perfil{
         font-family: 'Inter';
         font-style: normal;
         font-weight: 700;
-        font-size: 16px;
+        font-size: 10px;
         color: #ffffff;
     }
     
@@ -474,16 +516,16 @@
         font-family: 'Inter';
         font-style: normal;
         font-weight: 700;
-        font-size: 15px;
+        font-size: 9px;
         color: #ffffff;
-        padding-bottom: 18px;
+        padding-bottom: 6px;
     }
     
     .descricao_perfil{
         font-family: 'Inter';
         font-style: normal;
         font-weight: 700;
-        font-size: 13px;
+        font-size: 7px;
         color: #ffffff;
     }
 
@@ -507,367 +549,5 @@
 
     .frase_cpe{
         display: none;
-    }
-}
-
-
-
-
-
-
-/*responsividade 900px-1080px */
-@media (max-width:1080px){
-    .fundo_preto{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    
-        flex-direction: column;
-        position: absolute;
-        height: 80%;
-        width: 50%;
-        border-radius: 20px;
-    
-        background: rgba(0, 0, 0, 0.5);
-    }
-}
-
-/*responsividade 800px-900px */
-@media (max-width:900px){
-    .fundo_preto{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    
-        flex-direction: column;
-        position: absolute;
-        height: 70%;
-        width: 45%;
-        border-radius: 20px;
-    
-        background: rgba(0, 0, 0, 0.5);
-    }
-}
-
-/*responsividade 720px-800px */
-@media (max-width:800px){
-    .fundo_preto{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    
-        flex-direction: column;
-        position: absolute;
-        height: 61%;
-        width: 40%;
-        border-radius: 20px;
-    
-        background: rgba(0, 0, 0, 0.5);
-    }
-}
-
-/*responsividade 600px-720px */
-@media (max-width:720px){
-    .fundo_preto{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    
-        flex-direction: column;
-        position: absolute;
-        height: 34%;
-        width: 37%;
-        border-radius: 20px;
-    
-        background: rgba(0, 0, 0, 0.5);
-    }
-
-    .nome_perfil{
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        color: #ffd100;
-        padding-bottom: 15px;
-    }
-    
-    .pais_perfil{
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 15px;
-        color: #ffffff;
-    }
-    
-    .jogo_perfil{
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 13px;
-        color: #ffffff;
-        padding-bottom: 9px;
-    }
-    
-    .descricao_perfil{
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 10px;
-        color: #ffffff;
-    }
-}
-
-/* responsividade 400px-600px */
-@media (max-width:600px){
-    .fundo_preto{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    
-        flex-direction: column;
-        position: absolute;
-        height: 28%;
-        width: 47%;
-        border-radius: 20px;
-    
-        background: rgba(0, 0, 0, 0.5);
-    }
-
-    .nome_perfil{
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        color: #ffd100;
-        padding-bottom: 15px;
-    }
-    
-    .pais_perfil{
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 15px;
-        color: #ffffff;
-    }
-    
-    .jogo_perfil{
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 13px;
-        color: #ffffff;
-        padding-bottom: 9px;
-    }
-    
-    .descricao_perfil{
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 10px;
-        color: #ffffff;
-    }
-}
-
-/* responsividade 400px-500px */
-@media (max-width:500px){
-    .fundo_preto{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    
-        flex-direction: column;
-        position: absolute;
-        height: 21%;
-        width: 43%;
-        border-radius: 20px;
-    
-        background: rgba(0, 0, 0, 0.5);
-    }
-
-    .nome_perfil{
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        color: #ffd100;
-        padding-bottom: 15px;
-    }
-    
-    .pais_perfil{
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 15px;
-        color: #ffffff;
-    }
-    
-    .jogo_perfil{
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 13px;
-        color: #ffffff;
-        padding-bottom: 9px;
-    }
-    
-    .descricao_perfil{
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 10px;
-        color: #ffffff;
-    }
-}
-
-/* responsividade 300px-400px */
-@media (max-width:400px){
-    .fundo_preto{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    
-        flex-direction: column;
-        position: absolute;
-        height: 18%;
-        width: 36%;
-        border-radius: 20px;
-    
-        background: rgba(0, 0, 0, 0.5);
-    }
-
-    .nome_perfil{
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 13px;
-        color: #ffd100;
-        padding-bottom: 10px;
-    }
-    
-    .pais_perfil{
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 11px;
-        color: #ffffff;
-    }
-    
-    .jogo_perfil{
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 9px;
-        color: #ffffff;
-        padding-bottom: 7px;
-    }
-    
-    .descricao_perfil{
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 8px;
-        color: #ffffff;
-    }
-}
-
-/* responsividade 200px-300px */
-@media (max-width:300px){
-    .fundo_preto{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    
-        flex-direction: column;
-        position: absolute;
-        height: 15%;
-        width: 30%;
-        border-radius: 20px;
-    
-        background: rgba(0, 0, 0, 0.5);
-    }
-
-    .nome_perfil{
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 12px;
-        color: #ffd100;
-        padding-bottom: 10px;
-    }
-    
-    .pais_perfil{
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 10px;
-        color: #ffffff;
-    }
-    
-    .jogo_perfil{
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 8px;
-        color: #ffffff;
-        padding-bottom: 7px;
-    }
-    
-    .descricao_perfil{
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 7px;
-        color: #ffffff;
-    }
-}
-
-/* responsividade 0px-200px */
-@media (max-width:200px){
-    .fundo_preto{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    
-        flex-direction: column;
-        position: absolute;
-        height: 10%;
-        width: 25%;
-        border-radius: 20px;
-    
-        background: rgba(0, 0, 0, 0.5);
-    }
-
-    .nome_perfil{
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 11px;
-        color: #ffd100;
-        padding-bottom: 10px;
-    }
-    
-    .pais_perfil{
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 9px;
-        color: #ffffff;
-    }
-    
-    .jogo_perfil{
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 7px;
-        color: #ffffff;
-        padding-bottom: 7px;
-    }
-    
-    .descricao_perfil{
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 6px;
-        color: #ffffff;
     }
 }
