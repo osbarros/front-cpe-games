@@ -19,9 +19,6 @@ const sliderConfiguration = {
   swipeThreshold: 80,
   peek: { before: 100, after: 50 },
   breakpoints: {
-    768: {
-      perView: 2
-    },
     600: {
       perView: 1
     }
@@ -71,7 +68,7 @@ const Carrosel = () => {
     //renderização do slider
     return () => slider.mount()
   }, [slider])
-
+  
   return (
     <div class="glide">
       <div class="glide__track" data-glide-el="track">
@@ -98,10 +95,10 @@ const Carrosel = () => {
       </div>
       <div class="glide__arrows" data-glide-el="controls">
         <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
-          <i class="bi bi-caret-left amarelo"></i>
+          <i class="bi bi-caret-left amarelo" ></i>
         </button>
-        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
-          <i class="bi bi-caret-right amarelo"></i>
+        <button class="glide__arrow glide__arrow--right amarelo" data-glide-dir=">">
+          <i class="bi bi-caret-right"></i>
         </button>
       </div>
     </div>
