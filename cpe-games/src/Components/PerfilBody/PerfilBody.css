@@ -62,11 +62,15 @@
 }
 
 .container_perfil{
+    
+    object-fit: fill;
     display: flex;
     justify-content: center;
     align-items: center;
-
     flex-direction: column;
+
+    height: 100%;
+    width: 100%;
 }
 
 .imagem_perfil{
@@ -89,8 +93,8 @@
 
     flex-direction: column;
     position: absolute;
-    height: 65%;
-    width: 50%;
+    height: 54%;
+    width: 40%;
     border-radius: 20px;
 
     background: rgba(0, 0, 0, 0.5);
@@ -190,6 +194,7 @@
 
 
 
+
 /*responsividade 720px-1080px */
 @media (max-width:1080px) {
 
@@ -233,8 +238,8 @@
     
         flex-direction: column;
         position: absolute;
-        height: 40%;
-        width: 50%;
+        height: 37%;
+        width: 36%;
         border-radius: 20px;
 
         background: rgba(0, 0, 0, 0.5);
@@ -393,8 +398,8 @@
     
         flex-direction: column;
         position: absolute;
-        height: 50%;
-        width: 60%;
+        height: 60%;
+        width: 80%;
         border-radius: 20px;
 
         background: rgba(0, 0, 0, 0.5);
@@ -513,8 +518,8 @@
     
         flex-direction: column;
         position: absolute;
-        height: 30%;
-        width: 50%;
+        height: 60%;
+        width: 80%;
         border-radius: 20px;
 
         background: rgba(0, 0, 0, 0.5);
