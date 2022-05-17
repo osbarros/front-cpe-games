@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+.container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    opacity: 0.95;
+    text-align: center;
+}
+
+.container_user{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.container_user2{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-top: 18px;
+    margin-bottom: 10px;
+} 
+
+.user{
+    width: 20%;
+    height: 20%;
+    color: #F6FAE8;
+    text-align: center;
+}
+
+.titulo_perfil{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 240%;
+    max-width: 826px;
+    color: #F6FAE8;
+    text-align: center;
+}
+
+.editar_perfil{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 39px;
+    text-align: center;
+    margin-top: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 8px;
+    
+    color: #000000;
+    background-color: #ffd000;
+}
+
+.edit_pen{
+    display: none;
+    height: 16px;
+    width: 16px;
+}
+
+.container_perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+.imagem_perfil{
+    height: 100%;
+    width: 100%;
+    opacity: 40%;
+}
+
+.fundo_preto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    position: absolute;
+    height: 65%;
+    width: 50%;
+    border-radius: 20px;
+
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.container_info{
+    align-items: center;
+    justify-content: center;
+}
+
+.nome_perfil{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    color: #ffd100;
+    padding-bottom: 100px;
+}
+
+.pais_perfil{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    color: #ffffff;
+}
+
+.jogo_perfil{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: #ffffff;
+    padding-bottom: 50px;
+}
+
+.descricao_perfil{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.perfil_cpegames{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    color: #ffffff;
+    padding-top: 10px;
+}
+
+.texto_amarelo{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    color: #ffd100;
+}
+
+.frase_cpe{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #ffffff;
+    padding-top: 150px;
+    padding-bottom: 80px;
+}
+
+.texto_amarelo2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #ffd100;
+}
+
+.texto_negrito2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+/*responsividade 720px-1080px */
+@media (max-width:1080px) {
+
+    .user{
+        width: 15%;
+        height: 15%;
+        color: #F6FAE8;
+        text-align: center;
+    }
+
+    .titulo_perfil{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 140%;
+        max-width: 726px;
+        color: #F6FAE8;
+        text-align: center;
+    }
+    
+    .editar_perfil{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 28px;
+        text-align: center;
+        margin-top: 10px;
+        padding-right: 5px;
+        padding-left: 5px;
+        border-radius: 8px;
+        
+        color: #000000;
+        background-color: #ffd000;
+    }
+
+    .fundo_preto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        flex-direction: column;
+        position: absolute;
+        height: 40%;
+        width: 50%;
+        border-radius: 20px;
+
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .nome_perfil{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        color: #ffd100;
+        padding-bottom: 80px;
+    }
+    
+    .pais_perfil{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        color: #ffffff;
+    }
+    
+    .jogo_perfil{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        color: #ffffff;
+        padding-bottom: 35px;
+    }
+    
+    .descricao_perfil{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        color: #ffffff;
+    }
+
+    .perfil_cpegames{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 13px;
+        color: #ffffff;
+        padding-top: 8px;
+    }
+
+    .texto_amarelo{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 13px;
+        color: #ffd100;
+    }
+
+    .frase_cpe{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        color: #ffffff;
+        padding-top: 130px;
+        padding-bottom: 60px;
+    }
+
+    .texto_amarelo2{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        color: #ffd100;
+    }
+    
+    .texto_negrito2{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        color: #ffffff;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*responsividade 400px-720px */
+@media (max-width:720px){
+
+    .container_user{
+        display: none;
+    }
+
+    .container_user2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        flex-direction: column;
+    }   
+
+    .user2{
+        width: 14%;
+        height: 14%;
+        color: #F6FAE8;
+        text-align: center;
+    }
+
+    .editar_perfil{
+        display: none;
+    }
+
+    .edit_pen{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        flex-direction: column;
+        height: 24px;
+        width: 24px;
+    }
+
+    .editar_perfil2{
+        color: #000000;
+        background-color: #ffd000;
+    }
+
+    .fundo_preto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        flex-direction: column;
+        position: absolute;
+        height: 18%;
+        width: 50%;
+        border-radius: 20px;
+
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .nome_perfil{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 17px;
+        color: #ffd100;
+        padding-bottom: 20px;
+    }
+    
+    .pais_perfil{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 13px;
+        color: #ffffff;
+    }
+    
+    .jogo_perfil{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        color: #ffffff;
+        padding-bottom: 16px;
+    }
+    
+    .descricao_perfil{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 8px;
+        color: #ffffff;
+    }
+
+    .perfil_cpegames{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 7px;
+        color: #ffffff;
+        padding-top: 6px;
+        padding-bottom: 70px;
+    }
+
+    .texto_amarelo{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 7px;
+        color: #ffd100;
+    }
+
+    .frase_cpe{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* responsividade até 400px */
+@media (max-width:400px){
+
+    .container_user{
+        display: none;
+    }
+
+    .container_user2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        flex-direction: column;
+    } 
+
+    .user2{
+        width: 12%;
+        height: 12%;
+        color: #F6FAE8;
+        text-align: center;
+    }
+
+    .editar_perfil{
+        display: none;
+    }
+
+    .edit_pen{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        flex-direction: column;
+        height: 18px;
+        width: 18px;
+    }
+
+    .editar_perfil2{
+        color: #000000;
+        background-color: #ffd000;
+    }
+
+    .fundo_preto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        flex-direction: column;
+        position: absolute;
+        height: 15%;
+        width: 50%;
+        border-radius: 20px;
+
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .nome_perfil{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 13px;
+        color: #ffd100;
+        padding-bottom: 8px;
+    }
+    
+    .pais_perfil{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 10px;
+        color: #ffffff;
+    }
+    
+    .jogo_perfil{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 9px;
+        color: #ffffff;
+        padding-bottom: 6px;
+    }
+    
+    .descricao_perfil{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 7px;
+        color: #ffffff;
+    }
+
+    .perfil_cpegames{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 6px;
+        color: #ffffff;
+        padding-top: 6px;
+        padding-bottom: 40px;
+    }
+
+    .texto_amarelo{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 6px;
+        color: #ffd100;
+    }
+
+    .frase_cpe{
+        display: none;
+    }
+}

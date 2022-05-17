@@ -1,5 +1,17 @@
-@import url('https://rsms.me/inter/inter.css%27');
+* {
+    margin: 0;
+    padding: 0;
+}
 
-div {
-  font-family: "Inter";
+body {
+    height: 100vh;
+    background-color: white;
+}
+
+#root {
+    height: 100%;
+}
+
+button {
+    cursor: pointer;
 }
