@@ -5,7 +5,7 @@ import { Link, useHistory } from "react-router-dom"
 
 function Header(props) {
 
-    const history = useHistory();
+    /* const history = useHistory(); */
 
     const [active, setActive] = useState("header_alt_menu");
         const mobile_menu = () => {
@@ -41,11 +41,11 @@ function Header(props) {
                     </div>
                     <button className="header_login"
                         onClick={() => {
-                            history.push('/login');
+                            window.location.href=('/login');
                         }}   > LOGIN</button>
                     <button className="header_increver"
                         onClick={() => {
-                            history.push('/cadastro');
+                            window.location.href=('/cadastro');
                         }} > INSCREVA-SE</button>
                 </div>
                 <div className={active}>
