@@ -52,8 +52,14 @@ function Header(props) {
                     <button className="header_alt_jogos">JOGOS</button>
                     <button className="header_alt_campeonatos">CAMPEONATOS</button>
                     <button className="header_alt_loja">LOJA</button>
-                    <button className="header_alt_login">LOGIN</button>
-                    <button className="header_alt_inscrever">INSCREVA-SE</button>
+                    <button className="header_alt_login"
+                        onClick={() => {
+                            window.location.href=('/login');
+                        }} >LOGIN</button>
+                    <button className="header_alt_inscrever"
+                        onClick={() => {
+                            window.location.href=('/cadastro');
+                        }}>INSCREVA-SE</button>
                 </div>
                 <img src= "/images/searchbar_mobile.png" className="search_mobile"></img>
             </div>
