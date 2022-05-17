@@ -58,7 +58,8 @@ function PerfilBody() {
             </div>
 
             <div className="container_perfil">
-                <img className="imagem_perfil" alt="lol" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/wrarcana/wallpaper1_large.jpg"/>
+                <img className="imagem_perfil" alt="lol" src="https://wallpapercave.com/wp/wp10827192.jpg"/>
+                <img className="imagem_perfil2" alt="lol2" src="https://i.pinimg.com/originals/e9/94/be/e994be6c3518983808d3079e38dab038.png"/>
                 <div className="fundo_preto">
                     <div className="container_info">
                         <div className="nome_perfil">{userData.name}</div>
