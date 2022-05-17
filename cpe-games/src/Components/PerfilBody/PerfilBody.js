@@ -58,8 +58,8 @@ function PerfilBody() {
             </div>
 
             <div className="container_perfil">
-                <img className="imagem_perfil" alt="lol" src="https://wallpapercave.com/wp/wp10827192.jpg"/>
-                <img className="imagem_perfil2" alt="lol2" src="https://i.pinimg.com/originals/e9/94/be/e994be6c3518983808d3079e38dab038.png"/>
+                <img className="imagem_perfil" alt="lol" src="https://pbs.twimg.com/media/EZNpfVTX0AQ7JR0?format=jpg&name=4096x4096"/>
+                <img className="imagem_perfil2" alt="lol2" src="https://w0.peakpx.com/wallpaper/178/239/HD-wallpaper-irelia-high-noon-gamer-high-noon-league-of-legends-lol-videogames.jpg"/>
                 <div className="fundo_preto">
                     <div className="container_info">
                         <div className="nome_perfil">{userData.name}</div>
