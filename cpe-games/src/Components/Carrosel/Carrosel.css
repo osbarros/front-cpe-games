@@ -6,10 +6,20 @@
   padding-top: 3em;
 }
 
-/* Valores acima de 1440px */
+@media (min-width: 1440px) {
+  .amarelo {
+    font-size: 2.5em;
+  }
+}
+
+/* Valores até de 1440px */
 @media (max-width: 1440px) {
   .carrosel-item-header {
     font-size: 1.4em;
+  }
+
+  .carrosel-item-text {
+    font-size: 1.3em;
   }
 
   .logo-item-carrosel {
@@ -21,14 +31,24 @@
   }
 }
 
-/* Valores entre 1024px e 1440px */
+@media (max-width: 1100px) {
+  .carrosel-item-header {
+    font-size: 1em;
+  }
+
+  .carrosel-item-text {
+    font-size: 0.9em;
+  }
+}
+
+/* Valores até 1024px */
 @media (max-width: 1024px) {
   .carrosel-item-header {
     font-size: 1em;
   }
 
   .carrosel-item-text {
-    font-size: 0.7em;
+    font-size: 0.8em;
   }
 
   .logo-item-carrosel {
@@ -37,6 +57,49 @@
 
   .amarelo {
     font-size: 3em;
+  }
+
+  .glide__arrow--left {
+    left: 1.2em;
+  }
+  .glide__arrow--right {
+    right: 1.2em;
+  }
+}
+
+@media (max-width: 920px) {
+  .carrosel-item-header {
+    font-size: 0.7em;
+  }
+
+  .carrosel-item-text {
+    font-size: 0.6em;
+  }
+
+  /* Arrows */
+  .glide__arrow--left {
+    left: 1em;
+  }
+  .glide__arrow--right {
+    right: 1em;
+  }
+}
+
+@media (max-width: 768px) {
+  .carrosel-item-header {
+    font-size: 1em;
+  }
+
+  .carrosel-item-text {
+    font-size: 0.8em;
+  }
+
+  /* Arrows */
+  .glide__arrow--left {
+    left: 1em;
+  }
+  .glide__arrow--right {
+    right: 1em;
   }
 }
 
@@ -47,11 +110,43 @@
   }
 
   .carrosel-item-text {
-    font-size: 0.4em;
+    font-size: 0.6em;
   }
 
   .amarelo {
     font-size: 2em;
+  }
+
+  /* Arrows */
+  .glide__arrow--left {
+    left: 1em;
+  }
+  .glide__arrow--right {
+    right: 1em;
+  }
+}
+
+/* Valores até 280px */
+@media (max-width: 319px) {
+  .carrosel-item-header {
+    font-size: 0.8em;
+  }
+
+  .carrosel-item-text {
+    flex-wrap: wrap;
+    font-size: 0.6em;
+  }
+
+  .amarelo {
+    font-size: 1.9em;
+  }
+
+  /* Arrows */
+  .glide__arrow--left {
+    left: 0.7em;
+  }
+  .glide__arrow--right {
+    right: 0.7em;
   }
 }
 
@@ -110,6 +205,7 @@
 .carrosel-img-copa {
   display: block;
   width: 80%;
+  border-radius: 6%;
 }
 
 .logo-item-carrosel {

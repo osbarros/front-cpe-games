@@ -13,17 +13,24 @@ const sliderConfiguration = {
   startAt: 0,
   perView: 3,
   focusAt: "center",
-  gap: "50",
+  gap: "30",
   keyboard: true,
   //Distância do swipe para mudar item (testar)
   swipeThreshold: 80,
-  peek: { before: 100, after: 50 },
+  peek: { before: 50, after: 50 },
   breakpoints: {
     768: {
       perView: 2
     },
     600: {
-      perView: 1
+      peek: { before: 40, after: 40 },
+      perView: 1,
+      gap: "10"
+    },
+    320: {
+      peek: { before: 30, after: 30 },
+      perView: 1,
+      gap: "10"
     }
   }
 };
