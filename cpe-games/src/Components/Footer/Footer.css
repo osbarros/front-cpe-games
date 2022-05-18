@@ -57,7 +57,7 @@
   height: var(--social-media-size);
 }
 
-@media only screen and (max-width: 910px) {
+@media only screen and (max-width: 999px) {
   .footer-text-container {
     flex-direction: column;
     margin-left: auto;
