@@ -49,10 +49,10 @@ function Header(props) {
                         }} > INSCREVA-SE</button>
                 </div>
                 <div className={active}>
-                    <button className="header_alt_jogos">JOGOS</button>
-                    <button className="header_alt_campeonatos">CAMPEONATOS</button>
-                    <button className="header_alt_loja">LOJA</button>
-                    <button className="header_alt_login"
+                    <button className="header_alt_item">JOGOS</button>
+                    <button className="header_alt_item">CAMPEONATOS</button>
+                    <button className="header_alt_item">LOJA</button>
+                    <button className="header_alt_item"
                         onClick={() => {
                             window.location.href=('/login');
                         }} >LOGIN</button>

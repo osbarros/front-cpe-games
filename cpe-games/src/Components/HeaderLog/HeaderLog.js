@@ -4,11 +4,11 @@ import "./HeaderLog.css"
 
 function HeaderLog() {
 
-    const [active, setActive] = useState("header_alt_menu");
+    const [active, setActive] = useState("headerLog_alt_menu");
         const mobile_menu = () => {
-            active === "header_alt_menu"
-              ? setActive("header_alt_menu alt_menu_active")
-              : setActive("header_alt_menu");
+            active === "headerLog_alt_menu"
+              ? setActive("headerLog_alt_menu alt_menu_active")
+              : setActive("headerLog_alt_menu");
         }; 
     
     return (
@@ -42,11 +42,11 @@ function HeaderLog() {
                     </div>
                 </div>
                 <div className={active}>
-                    <button className="header_alt_jogos">JOGOS</button>
-                    <button className="header_alt_campeonatos">CAMPEONATOS</button>
-                    <button className="header_alt_loja">LOJA</button>
-                    <button className="header_alt_login">PERFIL</button>
-                    <button className="header_alt_inscrever">SAIR</button>
+                    <button className="header_alt_item">JOGOS</button>
+                    <button className="header_alt_item">CAMPEONATOS</button>
+                    <button className="header_alt_item">LOJA</button>
+                    <button className="header_alt_item">PERFIL</button>
+                    <button className="header_alt_item">SAIR</button>
                 </div>
                 <img src= "/images/searchbar_mobile.png" className="search_mobile"></img>
             </div>

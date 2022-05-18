@@ -7,7 +7,7 @@ import HeaderLog from "../../Components/HeaderLog";
 function Home() {
     return (
         <div>
-            <Header/>
+            <HeaderLog/>
             <HomeBody/>
             <Footer/>
         </div>
