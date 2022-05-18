@@ -1,9 +1,10 @@
 import React from "react";
 import HeaderLog from "../../Components/HeaderLog";
+import Header from "../../Components/Header";
 
 function Login() {
     return <h1>
-        <HeaderLog></HeaderLog>
+        <Header/>
     </h1>;
 }
 

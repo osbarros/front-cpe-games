@@ -22,7 +22,9 @@ function Header(props) {
                 <div className="line3"></div>
             </div>
             <div className = "header_esquerda">
-                <img src="/images/logo_cpe_preto.png" className="logo_cpe" alt="CPE"/>
+                <a href="/home">
+                    <img src="/images/logo_cpe_preto.png" className="logo_cpe" alt="CPE"/>
+                </a>
                 <button className = "header_jogos">
                     JOGOS 
                 </button>
@@ -33,7 +35,9 @@ function Header(props) {
                     LOJA
                 </button>
             </div>
-            <img src="/images/logo_cpe_preto.png" className="logo_cpe_mobile" alt="CPE"/>
+            <a href="/home">
+                <img src="/images/logo_cpe_preto.png" className="logo_cpe_mobile" alt="CPE"/>
+            </a>
                 <div className="header_direita">
                     <div className="header_search" action="">
                         <img src="/images/searchbar.svg" className="header_logo_searchbar" alt="searchbar"/>
@@ -56,7 +60,7 @@ function Header(props) {
                         onClick={() => {
                             window.location.href=('/login');
                         }} >LOGIN</button>
-                    <button className="header_alt_inscrever"
+                    <button className="header_alt_item"
                         onClick={() => {
                             window.location.href=('/cadastro');
                         }}>INSCREVA-SE</button>

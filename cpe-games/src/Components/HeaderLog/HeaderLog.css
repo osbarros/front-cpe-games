@@ -48,6 +48,7 @@ padding: 0;
     height: 60px;
     margin-top: 10px;
     margin-bottom: 10px;
+    cursor: pointer;
 
 
 }
@@ -154,12 +155,14 @@ padding: 0;
     width: 40px;
     height: 40px;
     margin-top: 10px;
+    cursor: pointer;
 }
 
 .logo_sair{
     width: 40px;
     height: 40px;
     margin-top: 10px;
+    cursor: pointer;
 }
 
 .header_increver{
@@ -205,6 +208,7 @@ padding: 0;
         display: block;
         position: absolute;
         left: 45%;
+        cursor: pointer;
     }
     .search_mobile{
         position: absolute;
