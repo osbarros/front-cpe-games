@@ -3,7 +3,7 @@ import Header from "./../../Components/Header";
 import HomeBody from "./../../Components/HomeBody";
 import Footer from "./../../Components/Footer";
 import HeaderLog from "../../Components/HeaderLog";
-import Carrosel from "../../Components/Carrosel"
+import Carrosel from "../../Components/Carrosel";
 
 function Home() {
     return (
