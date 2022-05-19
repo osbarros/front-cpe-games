@@ -1,14 +1,15 @@
 import React, {useState} from "react"
 import "./HeaderLog.css"
+import { useHistory } from "react-router-dom"
 
 
-function HeaderLog() {
+function HeaderLog(props) {
 
-    const [active, setActive] = useState("header_alt_menu");
+    const [active, setActive] = useState("headerLog_alt_menu");
         const mobile_menu = () => {
-            active === "header_alt_menu"
-              ? setActive("header_alt_menu alt_menu_active")
-              : setActive("header_alt_menu");
+            active === "headerLog_alt_menu"
+              ? setActive("headerLog_alt_menu alt_menu_active")
+              : setActive("headerLog_alt_menu");
         }; 
     
     return (
@@ -19,7 +20,9 @@ function HeaderLog() {
                 <div className="line3"></div>
             </div>
             <div className = "header_esquerda">
-                <img src="/images/logo_cpe_preto.png" className="logo_cpe" alt="CPE"/>
+                <a href="/home">
+                    <img src="/images/logo_cpe_preto.png" className="logo_cpe" alt="CPE"/>
+                </a>
                 <button className = "header_jogos">
                     JOGOS 
                 </button>
@@ -30,25 +33,32 @@ function HeaderLog() {
                     LOJA
                 </button>
             </div>
-            <img src="/images/logo_cpe_preto.png" className="logo_cpe_mobile" alt="CPE"/>
+            <a href="/home">
+             <img src="/images/logo_cpe_preto.png" className="logo_cpe_mobile" alt="CPE"/>
+            </a>
                 <div className="header_direita">
                     <div className="header_search" action="">
                         <img src="/images/searchbar.svg" className="header_logo_searchbar" alt="searchbar"/>
                         <input className="header_search_text" placeholder="Pesquisar..."></input>
                     </div>
                     <div className="sair_perfil">
-                        <img src="/images/logo_perfil.svg" className="logo_perfil" alt="perfil"/>
+                        <a href="/perfil">
+                         <img src="/images/logo_perfil.svg" className="logo_perfil" alt="perfil"/>
+                        </a>
                         <img src="/images/logo_sair.svg" className="logo_sair" alt="sair"/>
                     </div>
                 </div>
                 <div className={active}>
-                    <button className="header_alt_jogos">JOGOS</button>
-                    <button className="header_alt_campeonatos">CAMPEONATOS</button>
-                    <button className="header_alt_loja">LOJA</button>
-                    <button className="header_alt_login">PERFIL</button>
-                    <button className="header_alt_inscrever">SAIR</button>
+                    <button className="header_alt_item">JOGOS</button>
+                    <button className="header_alt_item">CAMPEONATOS</button>
+                    <button className="header_alt_item">LOJA</button>
+                    <button className="header_alt_item"
+                     onClick={() => {
+                        window.location.href=('/perfil');
+                    }}   > PERFIL </button>
+                    <button className="header_alt_item">SAIR</button>
                 </div>
-                <img src= "/images/searchbar_mobile.png" className="search_mobile"></img>
+                <img src= "/images/searchbar_mobile.png" className="search_mobile"/>
             </div>
 
     )  

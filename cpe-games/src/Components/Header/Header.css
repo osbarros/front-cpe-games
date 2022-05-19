@@ -16,6 +16,8 @@ padding: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    position: fixed;
+    z-index: 2;
     
 }
 .mobile_menu div{
@@ -46,6 +48,7 @@ padding: 0;
     height: 60px;
     margin-top: 10px;
     margin-bottom: 10px;
+    cursor:pointer;
 
 
 }
@@ -90,6 +93,7 @@ padding: 0;
     margin-top: 10px;
     margin-bottom: 10px;
     display: none;
+    cursor: pointer;
 }
 
 
@@ -153,6 +157,7 @@ padding: 0;
     font-size: 1.05vw;
     font-family: 'Inter';
     font-weight: 800;
+    text-decoration: none;
 }
 
 .header_increver{
@@ -182,6 +187,10 @@ padding: 0;
 
 
 @media (max-width: 999px){
+    .header_global{
+        height: 100%;
+    }
+
     .header_direita{
         display: none
     }
@@ -208,10 +217,10 @@ padding: 0;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        position: absolute;
-        top: 78px;
-        width: 50%;
-        height: 93vh;
+        position: fixed;
+        top: 80px;
+        width: max-content;
+        height: calc(100vh - 78px);
         left: 0;
         background: black;
         transform: translateX(-100%);
@@ -219,47 +228,15 @@ padding: 0;
         z-index: 2;
 
     }
-    .header_alt_jogos{
+    .header_alt_item{
         color:#F6FAE8;
         background-color: #000000;
         font-family: 'Inter';
         font-weight: 800;
         font-size: 20px;
         border: none;
-    }
-
-    .header_alt_campeonatos{
-        color:#F6FAE8;
-        background-color: #000000;
-        font-family: 'Inter';
-        font-weight: 800;
-        font-size: 20px;
-        border: none;
-    }
-
-    .header_alt_loja{
-        color:#F6FAE8;
-        background-color: #000000;
-        font-family: 'Inter';
-        font-weight: 800;
-        font-size: 20px;
-        border: none;
-    }
-    .header_alt_login{
-        color:#F6FAE8;
-        background-color: #000000;
-        font-family: 'Inter';
-        font-weight: 800;
-        font-size: 20px;
-        border: none; 
-    }
-    .header_alt_inscrever{
-        color:#F6FAE8;
-        background-color: #000000;
-        font-family: 'Inter';
-        font-weight: 800;
-        font-size: 20px;
-        border: none;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
 

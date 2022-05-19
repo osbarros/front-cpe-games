@@ -10,15 +10,16 @@
 }
 
 .container_user{
-    margin-top: 40px;
+    margin-top: 120px;
     margin-bottom: 20px;
+    
 }
 
 .container_user2{
     display: none;
     align-items: center;
     justify-content: center;
-    margin-top: 18px;
+    margin-top: 98px;
     margin-bottom: 10px;
 } 
 
@@ -62,14 +63,25 @@
 }
 
 .container_perfil{
+    
+    object-fit: fill;
     display: flex;
     justify-content: center;
     align-items: center;
-
     flex-direction: column;
+
+    height: 100%;
+    width: 100%;
 }
 
 .imagem_perfil{
+    height: 100%;
+    width: 100%;
+    opacity: 40%;
+}
+
+.imagem_perfil2{
+    display: none;
     height: 100%;
     width: 100%;
     opacity: 40%;
@@ -82,11 +94,13 @@
 
     flex-direction: column;
     position: absolute;
-    height: 65%;
-    width: 50%;
+    height: 54%;
+    width: 40%;
     border-radius: 20px;
 
     background: rgba(0, 0, 0, 0.5);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .container_info{
@@ -181,6 +195,7 @@
 
 
 
+
 /*responsividade 720px-1080px */
 @media (max-width:1080px) {
 
@@ -224,8 +239,8 @@
     
         flex-direction: column;
         position: absolute;
-        height: 40%;
-        width: 50%;
+        height: 37%;
+        width: 36%;
         border-radius: 20px;
 
         background: rgba(0, 0, 0, 0.5);
@@ -361,6 +376,22 @@
         background-color: #ffd000;
     }
 
+    .imagem_perfil{
+        display: none;
+    }
+
+    .imagem_perfil2{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        opacity: 40%;
+    }
+
     .fundo_preto{
         display: flex;
         justify-content: center;
@@ -368,8 +399,8 @@
     
         flex-direction: column;
         position: absolute;
-        height: 18%;
-        width: 50%;
+        height: 60%;
+        width: 80%;
         border-radius: 20px;
 
         background: rgba(0, 0, 0, 0.5);
@@ -379,7 +410,7 @@
         font-family: 'Inter';
         font-style: normal;
         font-weight: 700;
-        font-size: 17px;
+        font-size: 35px;
         color: #ffd100;
         padding-bottom: 20px;
     }
@@ -388,7 +419,7 @@
         font-family: 'Inter';
         font-style: normal;
         font-weight: 700;
-        font-size: 13px;
+        font-size: 26px;
         color: #ffffff;
     }
     
@@ -396,7 +427,7 @@
         font-family: 'Inter';
         font-style: normal;
         font-weight: 700;
-        font-size: 12px;
+        font-size: 25px;
         color: #ffffff;
         padding-bottom: 16px;
     }
@@ -405,7 +436,7 @@
         font-family: 'Inter';
         font-style: normal;
         font-weight: 700;
-        font-size: 8px;
+        font-size: 16px;
         color: #ffffff;
     }
 
@@ -488,8 +519,8 @@
     
         flex-direction: column;
         position: absolute;
-        height: 15%;
-        width: 50%;
+        height: 60%;
+        width: 80%;
         border-radius: 20px;
 
         background: rgba(0, 0, 0, 0.5);
@@ -499,7 +530,7 @@
         font-family: 'Inter';
         font-style: normal;
         font-weight: 700;
-        font-size: 13px;
+        font-size: 30px;
         color: #ffd100;
         padding-bottom: 8px;
     }
@@ -508,7 +539,7 @@
         font-family: 'Inter';
         font-style: normal;
         font-weight: 700;
-        font-size: 10px;
+        font-size: 20px;
         color: #ffffff;
     }
     
@@ -516,7 +547,7 @@
         font-family: 'Inter';
         font-style: normal;
         font-weight: 700;
-        font-size: 9px;
+        font-size: 19px;
         color: #ffffff;
         padding-bottom: 6px;
     }
@@ -525,7 +556,7 @@
         font-family: 'Inter';
         font-style: normal;
         font-weight: 700;
-        font-size: 7px;
+        font-size: 15px;
         color: #ffffff;
     }
 
