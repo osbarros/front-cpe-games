@@ -2,7 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./CadastroBody.css";
 
-function Cadastro() {
+function CadastroBody() {
     return (
         <div className="html">
           <div className="body-input">
@@ -77,4 +77,4 @@ function Cadastro() {
     );
 }
 
-export default Cadastro;
+export default CadastroBody;
