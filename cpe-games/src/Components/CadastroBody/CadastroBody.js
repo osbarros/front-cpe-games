@@ -1,6 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./Cadastro.css";
+import "./CadastroBody.css";
 
 function Cadastro() {
     return (
