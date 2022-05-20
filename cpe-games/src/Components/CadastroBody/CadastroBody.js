@@ -4,7 +4,7 @@ import "./CadastroBody.css";
 
 function CadastroBody() {
     return (
-        <div className="html">
+        <div className="cadastro_container">
           <div className="body-input">
               <h1 className="cadastro-title">CRIE SUA CONTA</h1>
               <div className="grid">

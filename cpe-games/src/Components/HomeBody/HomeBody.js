@@ -4,7 +4,7 @@ import "./HomeBody.css";
 function HomeBody() {
     return (
         <div>
-            <div className="container">
+            <div className="home_container">
                 <h1 className="primeiro_texto">
                     A CPE Games é uma plataforma de Esports para você se <span className="texto_negrito">divertir</span> e <span className="texto_negrito">competir</span> com seus amigos
                 </h1>

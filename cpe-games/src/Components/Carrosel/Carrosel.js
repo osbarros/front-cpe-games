@@ -58,7 +58,7 @@ const slides = [
   },
   {
     hrefImg: "/images/razer.jpeg",
-    title: "COPA RAZOR - CS:GO",
+    title: "COPA RAZER - CS:GO",
     data: "20/10/2022",
     horario: "09:00"
   },
