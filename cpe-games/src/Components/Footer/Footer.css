@@ -36,6 +36,7 @@
 .footer-text {
   text-transform: uppercase;
   color: #F6FAE8;
+  background-color: rgba(0, 0, 0, 0);
   font-size: var(--font-size);
   font-family: Inter;
   font-weight: 600;
