@@ -70,7 +70,7 @@ function CadastroBody() {
                   </div>
               </div>
               <div className="button">
-                  <input type="button" id="enter" value="CADASTRE-SE"></input>
+                  <button id="enter">CADASTRE-SE</button>
               </div>
           </div>
         </div>
