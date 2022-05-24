@@ -7,7 +7,7 @@ import HeaderLog from "../../Components/HeaderLog";
 function Perfil() {
     return (
         <div>
-            <Header/>
+            <HeaderLog/>
             <PerfilBody/>
             <Footer/>
         </div>
