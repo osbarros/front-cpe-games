@@ -146,11 +146,7 @@ padding: 0;
 }
 
 .header_login{
-    width: 10.73%;
-    height: 24px;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    width: 10.73%; 
     border: none;
     background-color: #000000;
     color:#F6FAE8;

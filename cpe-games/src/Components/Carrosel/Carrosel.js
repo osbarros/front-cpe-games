@@ -95,7 +95,7 @@ const Carrosel = () => {
                     <p className="carrosel-item-text">{e.data} - {e.horario}</p>
                   </div>
                   <div className="carrosel-item-footer">
-                    <img className="logo-item-carrosel" src="/images/logo_cpe.png"></img>
+                    <img className="logo-item-carrosel" src="/images/logo_cpe_preto.png"></img>
                   </div>
                 </a>
               </li>
