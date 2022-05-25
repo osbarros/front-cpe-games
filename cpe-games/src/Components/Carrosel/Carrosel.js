@@ -70,15 +70,6 @@ const slides = [
   }
 ];
 
-const script = () => {
-  let w = document.getElementById("container").width;
-  let title = document.getElementById("title").style;
-  let text = document.getElementById("text").style;
-
-  title.fontSize = w * 0.3;
-  text.fontSize = w * 0.1;
-}
-
 const Carrosel = () => {
   //definição do conteúdo do slide
   const slider = new Glide(".glide", sliderConfiguration);
@@ -98,9 +89,9 @@ const Carrosel = () => {
                 <a className="carrosel-item-box">
                   <div className="carrosel-item-header">
                     <img className="carrosel-img-copa" src={e.hrefImg}></img>
+                    <h4 className="carrosel-item-title">{e.title}</h4>
                   </div>
-                  <div id="container" className="carrosel-item-body">
-                    <h4 id="title" className="carrosel-item-title">{e.title}</h4>
+                  <div className="carrosel-item-body">
                     <p className="carrosel-item-text">{e.data} - {e.horario}</p>
                   </div>
                   <div className="carrosel-item-footer">
