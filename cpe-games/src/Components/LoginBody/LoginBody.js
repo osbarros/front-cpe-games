@@ -14,7 +14,7 @@ function LoginBody() {
         try {
             const response = await api.post('/login', {email, password});
             alert("Bem vindo", response.data.user.nome_usuario);
-            login(response.data.acessToken);
+            login(response.data.accessToken);
             navigate("/home");
             console.log(response);
         } catch (error) {
