@@ -70,9 +70,11 @@ function CadastroBody() {
                           <input type="email" className="input" onChange={(e)=>setEmail(e.target.value)}></input>
                       </div>
                       <div>
-                          <h3 className="input-title">password</h3>
+                          <h3 className="input-title">SENHA</h3>
                           <input type="password" className="input" onChange={(e)=>setPassword(e.target.value)}></input>
                       </div>
+
+                    {/*
                       <div className="jogos">
                           <h3 className="input-title">JOGOS</h3>
                           <div className="checkbox-games">
@@ -108,6 +110,7 @@ function CadastroBody() {
                               </div>
                           </div>
                       </div>
+    */}
                   </div>
               </div>
               <div className="button">
