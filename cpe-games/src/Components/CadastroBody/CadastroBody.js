@@ -1,5 +1,7 @@
 import React from "react";
 import { useState } from "react";
+import api from "../../services/api";
+import AlertModal from "../AlertModal";
 
 import "./CadastroBody.css";
 
@@ -8,27 +10,42 @@ function CadastroBody() {
     const [nome_usuario, setUsuario] = useState("");
     const [pais, setPais] = useState("");
     const [email, setEmail] = useState("");
-    const [senha, setSenha] = useState("");
+    const [password, setPassword] = useState("");
 
+    // Controle do AlertModal
+    const [viewModal, setViewModal] = useState(false);
+    const [message, setAlertMessage] = useState("");
+    const [success, setSuccess] = useState(false);
 
-    function handleSubmit() {
-        const requestBody = { nome, nome_usuario, pais, email, senha};
-        requestBody.descricao = "Standard";
+    async function Cadastro() {
+        const requestBody = { nome, nome_usuario, email, pais, password };
+        requestBody.descricao = "standard";
 
-        fetch('http://localhost:3333/user', {
-            method: 'POST',
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(requestBody)
-        }).then((response) => {
-            if(response.status == 200) {
-                alert("Cadastrado com sucesso!");
-            }
-        })
+        try {
+            console.log(requestBody);
+            const response = await api.post('/user', requestBody);
 
+            setAlertMessage("Usuário criado com sucesso.");
+            setSuccess(true);
+
+        } catch (error) {
+            console.log(error);
+            setAlertMessage("ERRO ao criar usuário.");
+            setSuccess(false);
+        }
+
+        setViewModal(true);
     }
 
     return (
         <div className="cadastro_container">
+        <AlertModal 
+        open={viewModal} 
+        message={message}
+        onClose={()=>setViewModal(false)}
+        success={success}
+        />
+
           <div className="body-input">
               <h1 className="cadastro-title">CRIE SUA CONTA</h1>
               <div className="grid">
@@ -53,8 +70,8 @@ function CadastroBody() {
                           <input type="email" className="input" onChange={(e)=>setEmail(e.target.value)}></input>
                       </div>
                       <div>
-                          <h3 className="input-title">SENHA</h3>
-                          <input type="password" className="input" onChange={(e)=>setSenha(e.target.value)}></input>
+                          <h3 className="input-title">password</h3>
+                          <input type="password" className="input" onChange={(e)=>setPassword(e.target.value)}></input>
                       </div>
                       <div className="jogos">
                           <h3 className="input-title">JOGOS</h3>
@@ -94,7 +111,7 @@ function CadastroBody() {
                   </div>
               </div>
               <div className="button">
-                  <button id="enter" onClick={handleSubmit}>CADASTRE-SE</button>
+                  <button id="enter" onClick={Cadastro}>CADASTRE-SE</button>
               </div>
           </div>
         </div>
