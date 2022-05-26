@@ -8,7 +8,7 @@ import Carrosel from "../../Components/Carrosel";
 function Home() {
     return (
         <div>
-            <Header/>
+            <HeaderLog/>
             <HomeBody/>
             <Carrosel/>
             <Footer/>
