@@ -58,7 +58,7 @@
     width: 100%;
     height: 50vh;
     min-height: 40vh;
-    padding: 10px;
+    padding: 2em;
 }
 
 .login_base {
@@ -95,66 +95,22 @@
 
 /* RESPONSIVIDADE*/
 
-@media only scream and (min-width:720px) and (max-width: 1080px) {
-    .login_page {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-
+@media only screen and (min-width:1300px) and (min-height:700px){
+    .container_login{
+        height: 43vh;
+        transform: scale(1.4);
     }
-
-    .container_login {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        color: #000000F2;
-        align-items: center;
-        font-size: 50%;
-        background-color: #ffd100;
-        max-width: fit-content;
-        border-radius: 0.8em;
-        width: 100%;
-        height: fit-content;
-        min-height: 40vh;
-        padding: 8px;
+    .container_title_Login {
+        font-size: 1.5em;
     }
-
-    
 }
 
-@media only scream and (min-width:650px) and (max-width: 720px) {
-    .login_page {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        column-gap:70%;
-
+@media only screen and (min-width:650px) and (max-width: 768px) {
+    .container_login{
+        height: 20vh;
     }
-    .container_texto_Login{
-        display: block;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        max-width: 10%;
-    }
-    .container_login {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        color: #000000F2;
-        align-items: center;
-        font-size: 35%;
-        background-color: #ffd100;
-        max-width: fit-content;
-        border-radius: 0.8em;
-        width: 100%;
-        height: fit-content;
-        min-height: 20vh;
-        padding: 3px;
+    .container_title_Login {
+        font-size: 1.2em;
     }
 }
 
@@ -179,7 +135,7 @@
         max-width: fit-content;
         border-radius: 1.2em;
         width: 100%;
-        height: 60%;
+        height: 40%;
         min-height: 4vh;
         padding: 9px;
 
