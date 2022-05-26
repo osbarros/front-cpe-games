@@ -1,20 +1,20 @@
 import React, {useState} from "react";
 import "./LoginBody.css";
-import {useHistory} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 import api from "../../services/api";
 
 
 function LoginBody() {
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
-    const history = useHistory();
+    const navigate = useNavigate();
 
     async function login(e) {
         e.preventDefault();
         try {
             const response = await api.post('/login', {email, password});
             alert("Bem vindo", response.data.user.nome_usuario);
-            history.push("/home");
+            navigate("/home");
             console.log(response);
         } catch (error) {
             if(error.response.status === 403){
