@@ -31,7 +31,7 @@ function LoginBody() {
 
     return (
         <div className="login_base">
-            
+
             <div className="login_page">
                 <div className="container_title_Login">
                     <h1 className="primeiro_texto_Login"> A melhor plataforma</h1>
@@ -46,7 +46,7 @@ function LoginBody() {
                     <h2 className="senha_Login">SENHA</h2>
                     <input type="password" className="input" placeholder="SENHA"
                         onChange={(e) => setPassword(e.target.value)}></input>
-                    <button value="Entrar">ENTRAR</button>
+                    <button value="Entrar" onClick={login}>ENTRAR</button>
                     <a href="">Esqueci minha senha</a>
                 </div>
             </div>
