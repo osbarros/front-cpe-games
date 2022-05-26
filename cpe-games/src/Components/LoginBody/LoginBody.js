@@ -2,18 +2,19 @@ import React, {useState} from "react";
 import "./LoginBody.css";
 import {useNavigate} from "react-router-dom";
 import api from "../../services/api";
-
+import { login } from "../../services/auth";
 
 function LoginBody() {
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
     const navigate = useNavigate();
 
-    async function login(e) {
+    async function handleLogin(e) {
         e.preventDefault();
         try {
             const response = await api.post('/login', {email, password});
             alert("Bem vindo", response.data.user.nome_usuario);
+            login(response.data.acessToken);
             navigate("/home");
             console.log(response);
         } catch (error) {
@@ -46,7 +47,7 @@ function LoginBody() {
                     <h2 className="senha_Login">SENHA</h2>
                     <input type="password" className="input" placeholder="SENHA"
                         onChange={(e) => setPassword(e.target.value)}></input>
-                    <button value="Entrar" onClick={login}>ENTRAR</button>
+                    <button value="Entrar" onClick={handleLogin}>ENTRAR</button>
                     <a href="">Esqueci minha senha</a>
                 </div>
             </div>
