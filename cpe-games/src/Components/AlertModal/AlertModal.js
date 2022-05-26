@@ -12,7 +12,7 @@ function AlertModal(props) {
 
     if(props.success) {
         action = () => {
-            navigate("/home");
+            navigate("/login");
         }
     } else {
         action = () => {
