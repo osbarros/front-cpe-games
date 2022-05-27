@@ -1,10 +1,6 @@
 import React, {useState} from "react";
 import "./LoginBody.css";
-<<<<<<< HEAD
 import { useHistory } from "react-router-dom";
-=======
-import {useHistory} from "react-router-dom";
->>>>>>> sessão
 import api from "../../services/api";
 import { login } from "../../services/auth";
 
@@ -17,18 +13,11 @@ function LoginBody() {
         e.preventDefault();
         try {
             const response = await api.post('/login', {email, password});
-<<<<<<< HEAD
-            login(response.data.accessToken);
-            history.push("/home");
-            history.go(0);
-            
-            
-=======
-            alert("Bem vindo", response.data.user.nome_usuario);
             login(response.data.accessToken, response.data.user);
             history.push("/home");
             history.go(0);
->>>>>>> sessão
+            
+            
         } catch (error) {
             if(error.response.status === 403){
                 alert("Credenciais inválidas!");
