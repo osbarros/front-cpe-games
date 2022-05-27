@@ -2,23 +2,37 @@ import React, { useState, useEffect } from "react";
 import "./PerfilBody.css"
 import PerfilModal from "../PerfilModal";
 import { Modal } from "@mui/material";
-import { getUser, getToken } from "../../services/auth";
+import { USER_KEY, getUser, getToken } from "../../services/auth";
 import api from "../../services/api";
 
 function PerfilBody() {
 
   const [viewModal, setViewModal] = useState(false);
 
-
   // TODO: [BACKEND] esses dados devem ser puxados do banco de dados
   /* Os dados abaixos são apenas iniciais. Como eles podem ser alterados durante uma edição de perfil, utiliza-se useState */
-  const data =JSON.parse(getUser());
-  console.log(data.nome);
+  const data = JSON.parse(getUser());
 
   // TODO: [BACKEND] após salvar, a mudança deve ser colocada no banco de dados
   function handleSave(user) {
+    sessionStorage.setItem(USER_KEY, JSON.stringify(user));
+    api.put("/user/" + getUser().user_id, {
+        "nome": "$user.nome",
+        "descricao": "$user.descricao"
+    });
   }
 
+  const [jogo, setJogo] = useState([]);
+
+  const jogos = [];
+
+  function handleJogos(array) {
+    array.map((e) => {
+      jogos.push({jogo: e});
+      setJogo(jogos)
+      console.log(jogo);
+    })
+  }
 
   return (
     <>
@@ -55,8 +69,14 @@ function PerfilBody() {
                   <div className="fundo_preto">
                       <div className="container_info">
                           <div className="nome_perfil">{data.nome}</div>
+                          <div className="jogo_perfil">
+                          {jogo.map((e) => {
+                            return (
+                              <p>{e.jogo}</p>
+                            )
+                          })}
+                          </div>
                           <div className="pais_perfil">BRASIL</div>
-                          <div className="jogo_perfil"></div>
                           <div className="descricao_perfil">{data.descricao}</div>
                       </div>
                   </div>
@@ -66,7 +86,7 @@ function PerfilBody() {
           </div>
       </div>
       <Modal className="modal-container" open={viewModal} onClose={() => setViewModal(false)}>
-              <PerfilModal user={data} onClose={()=>setViewModal(false)} onSave={(user) => {handleSave(user)}}/>
+        <PerfilModal user={data} onClose={()=>setViewModal(false)} onSave={(user, jogos) => {handleSave(user); handleJogos(jogos)}}/>
       </Modal>
     </>);
 }

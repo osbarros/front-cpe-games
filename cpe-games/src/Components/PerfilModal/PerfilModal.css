@@ -13,6 +13,10 @@
     justify-content: center;
 }
 
+.upper {
+  text-align: center;
+}
+
 .modal-dialog {
     background: #FFD100;
     width: var(--modal-hsize);
@@ -44,7 +48,7 @@
     font-size: var(--font-size);
 }
 
-.modal-section *:not(:first-child) {
+.modal-section *:not(:first-child):not(.no-margin){
     margin-top: var(--modal-section-item-gap);
 }
 
@@ -59,6 +63,46 @@ input, textarea, select {
     border: none;
     padding: .25em;
     border-radius: .25em;
+}
+
+/*Jogos*/
+.jogos {
+  margin: 0px;
+  width: 100%;
+}
+
+.dois {
+  width: 100%;
+}
+
+.checkbox-games {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+  width: 100%;
+}
+
+.no-margin {
+  margin-top: 0px;
+}
+
+div.checkbox-box > div {
+  height: fit-content;
+  line-height: 1em;
+}
+
+div.checkbox-box > div > input {
+  height: 0.7em;
+  width: 0.7em;
+}
+
+div.checkbox-box > div > label {
+  font-weight: 400;
+  font-size: 1em;
+
+  margin-left: 0.4em;
 }
 
 @media only screen and (max-width: 1000px) {

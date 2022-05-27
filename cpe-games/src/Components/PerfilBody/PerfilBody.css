@@ -12,7 +12,7 @@
 .container_user{
     margin-top: 120px;
     margin-bottom: 20px;
-    
+
 }
 
 .container_user2{
@@ -21,7 +21,7 @@
     justify-content: center;
     margin-top: 98px;
     margin-bottom: 10px;
-} 
+}
 
 .user{
     width: 20%;
@@ -51,7 +51,7 @@
     padding-right: 5px;
     padding-left: 5px;
     border-radius: 8px;
-    
+
     color: #000000;
     background-color: #ffd000;
 }
@@ -63,7 +63,7 @@
 }
 
 .container_perfil{
-    
+
     object-fit: fill;
     display: flex;
     justify-content: center;
@@ -104,8 +104,12 @@
 }
 
 .container_info{
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
 }
 
 .nome_perfil{
@@ -114,7 +118,7 @@
     font-weight: 700;
     font-size: 42px;
     color: #ffd100;
-    padding-bottom: 100px;
+    padding-bottom: 0px;
 }
 
 .pais_perfil{
@@ -126,12 +130,17 @@
 }
 
 .jogo_perfil{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
+    font-weight: 300;
+    font-size: 18px;
     color: #ffffff;
-    padding-bottom: 50px;
+    padding: 0px 0px 0px;
 }
 
 .descricao_perfil{
@@ -215,7 +224,7 @@
         color: #F6FAE8;
         text-align: center;
     }
-    
+
     .editar_perfil{
         font-family: 'Inter';
         font-style: normal;
@@ -227,7 +236,7 @@
         padding-right: 5px;
         padding-left: 5px;
         border-radius: 8px;
-        
+
         color: #000000;
         background-color: #ffd000;
     }
@@ -236,14 +245,26 @@
         display: flex;
         justify-content: center;
         align-items: center;
-    
+
         flex-direction: column;
         position: absolute;
         height: 37%;
         width: 36%;
         border-radius: 20px;
 
+        padding-top: 30px;
+        padding-bottom: 30px;
+
         background: rgba(0, 0, 0, 0.5);
+    }
+
+    .container_info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 100%;
     }
 
     .nome_perfil{
@@ -252,9 +273,9 @@
         font-weight: 700;
         font-size: 36px;
         color: #ffd100;
-        padding-bottom: 80px;
+        padding-bottom: 20px;
     }
-    
+
     .pais_perfil{
         font-family: 'Inter';
         font-style: normal;
@@ -262,16 +283,21 @@
         font-size: 22px;
         color: #ffffff;
     }
-    
+
     .jogo_perfil{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        align-items: center;
         font-family: 'Inter';
         font-style: normal;
-        font-weight: 700;
-        font-size: 20px;
+        font-weight: 300;
+        font-size: 18px;
         color: #ffffff;
-        padding-bottom: 35px;
+        padding: 0px 0px 0px;
     }
-    
+
     .descricao_perfil{
         font-family: 'Inter';
         font-style: normal;
@@ -316,7 +342,7 @@
         line-height: 18px;
         color: #ffd100;
     }
-    
+
     .texto_negrito2{
         font-family: 'Inter';
         font-style: normal;
@@ -348,7 +374,7 @@
         align-items: center;
 
         flex-direction: column;
-    }   
+    }
 
     .user2{
         width: 14%;
@@ -396,7 +422,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-    
+
         flex-direction: column;
         position: absolute;
         height: 60%;
@@ -414,7 +440,7 @@
         color: #ffd100;
         padding-bottom: 20px;
     }
-    
+
     .pais_perfil{
         font-family: 'Inter';
         font-style: normal;
@@ -422,16 +448,21 @@
         font-size: 26px;
         color: #ffffff;
     }
-    
+
     .jogo_perfil{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        align-items: center;
         font-family: 'Inter';
         font-style: normal;
-        font-weight: 700;
-        font-size: 25px;
+        font-weight: 300;
+        font-size: 18px;
         color: #ffffff;
-        padding-bottom: 16px;
+        padding: 0px 0px 0px;
     }
-    
+
     .descricao_perfil{
         font-family: 'Inter';
         font-style: normal;
@@ -484,7 +515,7 @@
         align-items: center;
 
         flex-direction: column;
-    } 
+    }
 
     .user2{
         width: 12%;
@@ -516,7 +547,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-    
+
         flex-direction: column;
         position: absolute;
         height: 60%;
@@ -534,7 +565,7 @@
         color: #ffd100;
         padding-bottom: 8px;
     }
-    
+
     .pais_perfil{
         font-family: 'Inter';
         font-style: normal;
@@ -542,16 +573,21 @@
         font-size: 20px;
         color: #ffffff;
     }
-    
+
     .jogo_perfil{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        align-items: center;
         font-family: 'Inter';
         font-style: normal;
-        font-weight: 700;
-        font-size: 19px;
+        font-weight: 300;
+        font-size: 18px;
         color: #ffffff;
-        padding-bottom: 6px;
+        padding: 0px 0px 0px;
     }
-    
+
     .descricao_perfil{
         font-family: 'Inter';
         font-style: normal;
