@@ -13,6 +13,10 @@ function AlertModal(props) {
     if(props.success) {
         action = () => {
             history.push("/login");
+<<<<<<< HEAD
+=======
+            history.go(0);
+>>>>>>> sessão
         }
     } else {
         action = () => {

@@ -1,5 +1,9 @@
 import React from "react";
+<<<<<<< HEAD
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
+=======
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+>>>>>>> sessão
 import Cadastro from "./Pages/Cadastro";
 import HomeDeslogado from "./Pages/HomeDeslogado";
 import Home from "./Pages/Home";
@@ -46,6 +50,7 @@ function Rotas() {
 
 function renderHeaderLog() {
     return(
+<<<<<<< HEAD
         <HeaderLog>
             <Switch>
                 <Route exact path="/cadastro" component={Cadastro}/>
@@ -55,6 +60,17 @@ function renderHeaderLog() {
                 <Route component={() => <Redirect to={"/home"}/>}/>
             </Switch>
         </HeaderLog>
+=======
+        <BrowserRouter>
+            <Switch>
+                <Route path="/cadastro" component={Cadastro}/>
+                <Route path="/homeDeslogado" component={HomeDeslogado}/>
+                <Route path="/login" component={Login}/>
+                <Route path="/perfil" component={Perfil}/>
+                <Route path="*" component={Home}/>
+            </Switch>
+        </BrowserRouter>
+>>>>>>> sessão
     );
 }
 
