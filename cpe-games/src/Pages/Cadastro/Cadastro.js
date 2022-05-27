@@ -6,7 +6,6 @@ import Footer from "../../Components/Footer"
 function Cadastro() {
     return (
         <div>
-        <Header/>
         <CadastroBody/>
         <Footer/>
         </div>

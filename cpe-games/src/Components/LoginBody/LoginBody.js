@@ -1,22 +1,23 @@
 import React, {useState} from "react";
 import "./LoginBody.css";
-import {useNavigate} from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import api from "../../services/api";
 import { login } from "../../services/auth";
 
 function LoginBody() {
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
-    const navigate = useNavigate();
+    const history = useHistory();
 
     async function handleLogin(e) {
         e.preventDefault();
         try {
             const response = await api.post('/login', {email, password});
-            alert("Bem vindo", response.data.user.nome_usuario);
-            login(response.data.acessToken);
-            navigate("/home");
-            console.log(response);
+            login(response.data.accessToken);
+            history.push("/home");
+            history.go(0);
+            
+            
         } catch (error) {
             if(error.response.status === 403){
                 alert("Credenciais inválidas!");

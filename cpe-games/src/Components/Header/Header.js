@@ -14,7 +14,7 @@ function Header(props) {
               : setActive("header_alt_menu");
         }; 
     
-    return (
+    return (<>
         <div className="header_global">
             <div onClick={mobile_menu} className = "mobile_menu">
                 <div className="line1"></div>
@@ -68,6 +68,9 @@ function Header(props) {
                 <img src= "/images/searchbar_mobile.png" className="search_mobile"></img>
             </div>
 
+            {props.children}
+
+            </>
     )  
 }
 

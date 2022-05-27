@@ -5,7 +5,6 @@ import LoginBody from "../../Components/LoginBody";
 
 function Login() {
     return <div>
-        <Header/>
         <LoginBody/>
     </div>;
 }
