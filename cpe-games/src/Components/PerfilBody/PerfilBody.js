@@ -22,13 +22,14 @@ function PerfilBody() {
     });
   }
 
-  const [jogo, setJogo] = useState([]);
+  const [jogo, setJogo] = useState(JSON.parse(sessionStorage.getItem("@cpe-games-jogos")));
 
   const jogos = [];
 
   function handleJogos(array) {
     array.map((e) => {
       jogos.push({jogo: e});
+      sessionStorage.setItem("@cpe-games-jogos", JSON.stringify(jogos))
       setJogo(jogos)
       console.log(jogo);
     })
