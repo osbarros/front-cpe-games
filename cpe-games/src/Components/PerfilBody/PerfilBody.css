@@ -132,12 +132,12 @@
 .jogo_perfil{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 100%;
     align-items: center;
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 300;
+    font-weight: 700;
     font-size: 18px;
     color: #ffffff;
     padding: 0px 0px 0px;
