@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {useNavigate} from "react-router-dom"
+import {useHistory} from "react-router-dom"
 
 import { Button, Modal } from "@mui/material";
 import "./AlertModal.css";
@@ -8,11 +8,11 @@ function AlertModal(props) {
 
 
     let action = () => {};
-    const navigate = useNavigate();
+    const history = useHistory();
 
     if(props.success) {
         action = () => {
-            navigate("/login");
+            history.push("/login");
         }
     } else {
         action = () => {

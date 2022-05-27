@@ -1,21 +1,23 @@
 import React, {useState} from "react";
 import "./LoginBody.css";
-import {useNavigate} from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import api from "../../services/api";
-
+import { login } from "../../services/auth";
 
 function LoginBody() {
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
-    const navigate = useNavigate();
+    const history = useHistory();
 
-    async function login(e) {
+    async function handleLogin(e) {
         e.preventDefault();
         try {
             const response = await api.post('/login', {email, password});
-            alert("Bem vindo", response.data.user.nome_usuario);
-            navigate("/home");
-            console.log(response);
+            login(response.data.accessToken);
+            history.push("/home");
+            history.go(0);
+            
+            
         } catch (error) {
             if(error.response.status === 403){
                 alert("Credenciais inválidas!");
@@ -31,7 +33,7 @@ function LoginBody() {
 
     return (
         <div className="login_base">
-            
+
             <div className="login_page">
                 <div className="container_title_Login">
                     <h1 className="primeiro_texto_Login"> A melhor plataforma</h1>
@@ -46,7 +48,7 @@ function LoginBody() {
                     <h2 className="senha_Login">SENHA</h2>
                     <input type="password" className="input" placeholder="SENHA"
                         onChange={(e) => setPassword(e.target.value)}></input>
-                    <button value="Entrar">ENTRAR</button>
+                    <button value="Entrar" onClick={handleLogin}>ENTRAR</button>
                     <a href="">Esqueci minha senha</a>
                 </div>
             </div>

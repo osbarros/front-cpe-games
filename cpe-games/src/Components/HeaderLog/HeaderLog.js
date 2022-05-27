@@ -1,9 +1,11 @@
 import React, {useState} from "react"
 import "./HeaderLog.css"
 import { useHistory } from "react-router-dom"
+import { logout } from "../../services/auth";
 
 
 function HeaderLog(props) {
+    const history = useHistory();
 
     const [active, setActive] = useState("headerLog_alt_menu");
         const mobile_menu = () => {
@@ -11,8 +13,14 @@ function HeaderLog(props) {
               ? setActive("headerLog_alt_menu alt_menu_active")
               : setActive("headerLog_alt_menu");
         }; 
+
+    function handleLogout() {
+        logout();
+        history.push("/home");
+        history.go(0);
+    }
     
-    return (
+    return (<>
         <div className="header_global">
             <div onClick={mobile_menu} className = "mobile_menu">
                 <div className="line1"></div>
@@ -45,7 +53,7 @@ function HeaderLog(props) {
                         <a href="/perfil">
                          <img src="/images/logo_perfil.svg" className="logo_perfil" alt="perfil"/>
                         </a>
-                        <img src="/images/logo_sair.svg" className="logo_sair" alt="sair"/>
+                        <img src="/images/logo_sair.svg" className="logo_sair" alt="sair" onClick={handleLogout}/>
                     </div>
                 </div>
                 <div className={active}>
@@ -56,12 +64,13 @@ function HeaderLog(props) {
                      onClick={() => {
                         window.location.href=('/perfil');
                     }}   > PERFIL </button>
-                    <button className="header_alt_item">SAIR</button>
+                    <button className="header_alt_item" onClick={handleLogout}>SAIR</button>
                 </div>
                 <img src= "/images/searchbar_mobile.png" className="search_mobile"/>
             </div>
 
-    )  
+            {props.children}
+    </>)  
 }
 
 export default HeaderLog
